@@ -54,7 +54,7 @@ export default async function ArtistPage({ params }: Props) {
                 />
               </div>
             </div>
-            <dl className="mt-10 border-t border-gray-900/10 pt-10">
+            <dl className="mt-10 border-t border-gray-900/10 pt-10 hidden sm:block">
               <dt className="text-sm font-semibold leading-6 text-gray-600">
                 Responsible Agent{artist.agents.length > 1 ? "s" : ""}
               </dt>
@@ -102,6 +102,24 @@ export default async function ArtistPage({ params }: Props) {
               </div>
             ) : null}
           </div>
+          <dl className="border-t border-gray-900/10 pt-10 block sm:hidden">
+            <dt className="text-sm font-semibold leading-6 text-gray-600">
+              Responsible Agent{artist.agents.length > 1 ? "s" : ""}
+            </dt>
+            <div className="grid grid-cols-1 gap-8">
+              {artist.agents.map((agent, agentIdx) => (
+                <dd
+                  key={agentIdx}
+                  className="mt-2 flex flex-col leading-10 tracking-tight"
+                >
+                  <span className="text-3xl font-bold text-gray-900">
+                    {agent.name}
+                  </span>
+                  <span className="text-md text-gray-500">{agent.email}</span>
+                </dd>
+              ))}
+            </div>
+          </dl>
         </div>
       </div>
     </div>
