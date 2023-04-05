@@ -107,7 +107,7 @@ export default async function ArtistPage({ params }: Props) {
               <div className="mt-10 flex">
                 <a
                   href={artist.website}
-                  className="text-base font-semibold leading-7 text-[#AF8961]"
+                  className="text-base font-semibold leading-7 text-[#AF8961] hover:opacity-80"
                 >
                   Visit {artist.name}&apos;s website
                   <span aria-hidden="true">&rarr;</span>
