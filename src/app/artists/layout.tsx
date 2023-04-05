@@ -1,3 +1,4 @@
+import Footer from "../footer";
 import Header from "../header";
 
 interface Props {
@@ -9,6 +10,7 @@ const Layout = ({ children }: Props) => {
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

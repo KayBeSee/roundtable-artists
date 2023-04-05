@@ -22,7 +22,7 @@ const options: Option[] = [
 ];
 
 const OptionItem = ({ option }: { option: Option }) => (
-  <li className="text-slate-900 flex items-center justify-center hover:bg-gray-100/50 hover:ring-gray-500/50 hover:ring-1 rounded-2xl transition-all duration-200">
+  <li className="text-slate-900 flex items-center justify-center hover:underline hover:decoration-2 hover:underline-offset-4 decoration-[#B9A48E] rounded-2xl transition-all duration-200">
     <Link
       href={option.href}
       className="flex items-center justify-center h-full w-full py-2 px-3 sm:py-4 sm:px-5 text-lg font-semibold"

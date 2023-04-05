@@ -1,12 +1,8 @@
+import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
+import clsx from "clsx";
 import { data, Artist } from "data";
 import Image from "next/image";
-
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "37" },
-  { label: "Countries", value: "12" },
-  { label: "Raised", value: "$25M" },
-];
+import Link from "next/link";
 
 interface Props {
   params: {
@@ -20,7 +16,19 @@ export default async function ArtistPage({ params }: Props) {
   const artist = data.artists[slug];
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-20 sm:py-20">
+      <div className="max-w-6xl sm:max-w-7xl mx-auto px-6 lg:px-8 mt-4">
+        <Link
+          href="/artists"
+          className="group inline-flex space-x-3 text-sm font-medium text-gray-600 hover:text-gray-500 mb-6 sm:mb-12"
+        >
+          <ArrowLongLeftIcon
+            className="h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-400"
+            aria-hidden="true"
+          />
+          <span>Back to Roster</span>
+        </Link>
+      </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
@@ -46,17 +54,23 @@ export default async function ArtistPage({ params }: Props) {
                 />
               </div>
             </div>
-            <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-              {stats.map((stat, statIdx) => (
-                <div key={statIdx}>
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.label}
-                  </dt>
-                  <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">
-                    {stat.value}
+            <dl className="mt-10 border-t border-gray-900/10 pt-10">
+              <dt className="text-sm font-semibold leading-6 text-gray-600">
+                Responsible Agent{artist.agents.length > 1 ? "s" : ""}
+              </dt>
+              <div className="grid grid-cols-1 gap-8">
+                {artist.agents.map((agent, agentIdx) => (
+                  <dd
+                    key={agentIdx}
+                    className="mt-2 flex flex-col leading-10 tracking-tight"
+                  >
+                    <span className="text-3xl font-bold text-gray-900">
+                      {agent.name}
+                    </span>
+                    <span className="text-md text-gray-500">{agent.email}</span>
                   </dd>
-                </div>
-              ))}
+                ))}
+              </div>
             </dl>
           </div>
           <div>
@@ -68,40 +82,25 @@ export default async function ArtistPage({ params }: Props) {
                 {artist.name}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
-                </p>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
+                {artist.bio?.map((line, i) => (
+                  <p key={i} className={clsx(i === 1 ? "mt-6" : "mt-8")}>
+                    {line}
+                  </p>
+                ))}
               </div>
             </div>
 
-            <div className="mt-10 flex">
-              <a
-                href="#"
-                className="text-base font-semibold leading-7 text-[#AF8961]"
-              >
-                Visit {artist.name}&apos;s website
-                <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+            {artist.website ? (
+              <div className="mt-10 flex">
+                <a
+                  href={artist.website}
+                  className="text-base font-semibold leading-7 text-[#AF8961]"
+                >
+                  Visit {artist.name}&apos;s website
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

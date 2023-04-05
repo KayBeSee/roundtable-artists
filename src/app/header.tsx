@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 z-[1] flex flex-wrap items-center justify-between px-4 py-5 shadow-slate-900/5 transition duration-500 shadow-none sm:px-6 lg:px-8 w-full",
+        "fixed top-0 z-[1] flex flex-wrap items-center border-b border-slate-500/20 justify-between px-4 py-5 shadow-slate-900/5 transition duration-500 shadow-none sm:px-6 lg:px-8 w-full",
         isScrolled
           ? "bg-slate-900/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-slate-100/95"
           : "bg-transparent"
@@ -51,7 +51,7 @@ export default function Header() {
             alt=""
           />
           <Image
-            className="h-4 w-auto ml-4 hidden sm:block"
+            className="h-3 sm:h-4 w-auto ml-4"
             src="/logo-text.svg"
             width={150}
             height={150}
@@ -73,7 +73,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:decoration-2 hover:underline-offset-4 decoration-[#B9A48E]"
             >
               {item.name}
             </Link>
