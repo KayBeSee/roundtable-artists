@@ -51,7 +51,7 @@ export default function Header() {
             alt=""
           />
           <Image
-            className="h-4 w-auto ml-4"
+            className="h-4 w-auto ml-4 hidden sm:block"
             src="/logo-text.svg"
             width={150}
             height={150}
