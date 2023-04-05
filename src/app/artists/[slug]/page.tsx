@@ -11,7 +11,6 @@ interface Props {
 }
 
 export default async function ArtistPage({ params }: Props) {
-  console.log("params: ", params);
   const { slug } = params;
   const artist = data.artists[slug];
 
@@ -60,15 +59,29 @@ export default async function ArtistPage({ params }: Props) {
               </dt>
               <div className="grid grid-cols-1 gap-8">
                 {artist.agents.map((agent, agentIdx) => (
-                  <dd
+                  <a
                     key={agentIdx}
-                    className="mt-2 flex flex-col leading-10 tracking-tight"
+                    href={`mailto:${agent.email}`}
+                    className="group mt-2 flex flex-col leading-10 tracking-tight"
                   >
                     <span className="text-3xl font-bold text-gray-900">
                       {agent.name}
+                      <svg
+                        viewBox="0 0 3 6"
+                        className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
+                      >
+                        <path
+                          d="M0 0L3 3L0 6"
+                          fill="none"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </span>
                     <span className="text-md text-gray-500">{agent.email}</span>
-                  </dd>
+                  </a>
                 ))}
               </div>
             </dl>
@@ -108,15 +121,29 @@ export default async function ArtistPage({ params }: Props) {
             </dt>
             <div className="grid grid-cols-1 gap-8">
               {artist.agents.map((agent, agentIdx) => (
-                <dd
+                <a
+                  href={`mailto:${agent.email}`}
                   key={agentIdx}
-                  className="mt-2 flex flex-col leading-10 tracking-tight"
+                  className="group mt-2 flex flex-col leading-10 tracking-tight"
                 >
                   <span className="text-3xl font-bold text-gray-900">
                     {agent.name}
+                    <svg
+                      viewBox="0 0 3 6"
+                      className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
+                    >
+                      <path
+                        d="M0 0L3 3L0 6"
+                        fill="none"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </span>
                   <span className="text-md text-gray-500">{agent.email}</span>
-                </dd>
+                </a>
               ))}
             </div>
           </dl>
@@ -128,12 +155,10 @@ export default async function ArtistPage({ params }: Props) {
 
 export async function generateStaticParams() {
   const artistSlugs = Object.keys(data.artists);
-  console.log("artistSlugs: ", artistSlugs);
 
   const formattedSlugs = artistSlugs.map((slug) => ({
     slug,
   }));
-  console.log("formattedSlugs: ", formattedSlugs);
 
   return formattedSlugs;
 }

@@ -1,27 +1,9 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
 import { data } from "data";
+import Image from "next/image";
 
 export default function Example() {
   return (
-    <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+    <div className="relative overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
       <div
         className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
         aria-hidden="true"
@@ -39,17 +21,36 @@ export default function Example() {
               aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui
               irure qui lorem cupidatat commodo.
             </p>
-            <dl className="mt-10 space-y-4 grid text-base leading-7 text-gray-600">
+            <div className="mt-10 space-y-4 grid text-base leading-7 text-gray-600">
               {data.contacts.map((contact) => (
-                <span key={contact.email}>
-                  <p className="text-slate-900 font-medium">{contact.name}</p>
+                <a
+                  href={`mailto:${contact.email}`}
+                  key={contact.email}
+                  className="group"
+                >
+                  <p className="text-slate-900 font-medium">
+                    {contact.name}{" "}
+                    <svg
+                      viewBox="0 0 3 6"
+                      className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
+                    >
+                      <path
+                        d="M0 0L3 3L0 6"
+                        fill="none"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </p>
                   <p className="text-slate-600">{contact.email}</p>
-                </span>
+                </a>
               ))}
-            </dl>
+            </div>
           </div>
 
-          <img
+          <Image
             src="/contact/image1.jpg"
             alt=""
             height={200}
