@@ -47,9 +47,11 @@ export default function Artists() {
         manage.
       </h2>
       <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 overflow-hidden">
-        {Object.keys(data.artists).map((artist, i) => (
-          <OptionItem key={i} option={data.artists[artist]} slug={artist} />
-        ))}
+        {Object.keys(data.artists)
+          .sort((a, b) => a.localeCompare(b))
+          .map((artist, i) => (
+            <OptionItem key={i} option={data.artists[artist]} slug={artist} />
+          ))}
       </ul>
     </main>
   );
