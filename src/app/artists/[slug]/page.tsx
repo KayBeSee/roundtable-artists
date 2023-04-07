@@ -35,8 +35,7 @@ export default async function ArtistPage({ params }: Props) {
               <Image
                 className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
                 src={`/artists/${artist.imageUrl}`}
-                width={200}
-                height={200}
+                fill
                 alt=""
               />
               <div className="absolute inset-0 bg-gray-100 mix-blend-multiply" />

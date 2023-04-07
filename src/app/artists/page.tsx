@@ -10,12 +10,12 @@ const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
       href={`/artists/${slug}`}
       className="flex flex-col items-center justify-center h-full w-full text-lg font-semibold"
     >
-      <div className="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div className="absolute inset-0 -z-10 h-full w-full">
         <Image
           src={`/artists/${option.imageUrl}`}
           fill
           alt={`${option.name} Photo`}
-          className="rounded-2xl"
+          className="rounded-2xl object-cover"
         />
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#745B44]/90 via-gray-900/40 group-hover:opacity-0 transition-all duration-200" />
