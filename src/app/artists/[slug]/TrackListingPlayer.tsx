@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const TrackListingPlayer = ({ tracks }: Props) => {
-  const ref = useRef<HTMLAudioElement>(null);
+  const ref = useRef<HTMLAudioElement | null>(null);
   const [currentAudioUrl, setCurrentAudioUrl] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -36,7 +36,7 @@ export const TrackListingPlayer = ({ tracks }: Props) => {
 
   useEffect(() => {
     return () => {
-      ref.current.pause();
+      ref.current!.pause();
       setCurrentAudioUrl("");
       setIsPlaying(false);
     };
@@ -49,10 +49,10 @@ export const TrackListingPlayer = ({ tracks }: Props) => {
   const togglePlay = (url: string) => {
     if (currentAudioUrl === url) {
       if (!isPlaying) {
-        ref.current.play();
+        ref.current!.play();
         setIsPlaying(true);
       } else {
-        ref.current.pause();
+        ref.current!.pause();
         setIsPlaying(false);
       }
     } else {
