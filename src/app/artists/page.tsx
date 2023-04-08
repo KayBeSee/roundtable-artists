@@ -15,7 +15,7 @@ const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
           src={`/artists/${option.imageUrl}`}
           fill
           alt={`${option.name} Photo`}
-          className="rounded-2xl object-cover"
+          className="rounded-2xl object-cover object-top"
         />
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#745B44]/90 via-gray-900/40 group-hover:opacity-0 transition-all duration-200" />

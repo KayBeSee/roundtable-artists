@@ -1,31 +1,4 @@
-export interface Artist {
-  name: string;
-  imageUrl: string;
-  bio?: string[];
-  agents: Contact[];
-  website?: string;
-  social?: {
-    facebook?: string;
-    instagram?: string;
-    spotify?: string;
-    youtube?: string;
-  };
-}
-
-interface Contact {
-  name: string;
-  email: string;
-  phone?: string;
-}
-
-interface DataConfig {
-  name: string;
-  description: string;
-  contacts: Contact[];
-  artists: {
-    [key: string]: Artist;
-  };
-}
+import { DataConfig, Contact } from "types";
 
 const AllenRoper: Contact = {
   name: "Allen Roper",
@@ -42,6 +15,11 @@ export const data: DataConfig = {
   name: "Roundtable Artists",
   description: "",
   contacts: [AllenRoper, JasonMiles],
+  style: {
+    roster: {
+      trackListing: "text-[#B9A48E] text-white",
+    },
+  },
   artists: {
     litz: {
       name: "LITZ",
@@ -58,6 +36,28 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd?si=E6AiuFCsTpiMyoJ8_9F_QA&nd=1",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Morning Dew",
+          url: "https://p.scdn.co/mp3-preview/d66beb65ad042d3192d512acc134b539e06acb9a?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Funkin' Problem",
+          url: "https://p.scdn.co/mp3-preview/048e9a95f099be04ee3bf872fe5d664c3daceb1e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Tomatoes",
+          url: "https://p.scdn.co/mp3-preview/dec4c38ee59c4aa5e40a2a293ee15f41cd361bb4?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Straight to the Moon - Live",
+          url: "https://p.scdn.co/mp3-preview/c041fa477aae19daf906f5c3277c548ef5250c5d?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Japanese Love Affair - Mercury Lounge - New York, NY - 12.16.22",
+          url: "https://p.scdn.co/mp3-preview/b2ed0105a4d46e778235fb56051acb7aeb479ddd?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["buffalo-wabs-the-price-hill-hustle"]: {
       name: "Buffalo Wabs & The Price Hill Hustle",
@@ -73,6 +73,28 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/pricehillhustle",
         youtube: "https://www.youtube.com/@BuffaloWabs",
       },
+      tracks: [
+        {
+          name: "Four Walls of Raiford",
+          url: "https://p.scdn.co/mp3-preview/15632a80db15e5a0ee177b7a3488d831c463cb9f?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Long Gone (From Bowling Green)",
+          url: "https://p.scdn.co/mp3-preview/bd63d7ffe704c172b3f1f3a30c936465426b0587?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Oh, Ramona!",
+          url: "https://p.scdn.co/mp3-preview/a4e26f66a5ad1072ae3aa710310c9abcee29dd66?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Buffalo's Canon",
+          url: "https://p.scdn.co/mp3-preview/8783018320c04a472d197a8e79aeb32485ab0105?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Stewball",
+          url: "https://p.scdn.co/mp3-preview/b306c1ddb1b91ba6f687beb4b03e2f7d8ab1049d?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["charlie-brown-superstar"]: {
       name: "Charlie Brown Superstar",
@@ -88,6 +110,28 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/charliebrownsuperstar/?hl=en",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Never Gonna Stop - Original Mix",
+          url: "https://p.scdn.co/mp3-preview/f3d811f72c8cab7488559dff0f03e274ec54dae8?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Be Thankful For What You've Got",
+          url: "https://p.scdn.co/mp3-preview/f843591839f3f7d8d700b51f6d5ffc6e9a231e13?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Insane - Original Mix",
+          url: "https://p.scdn.co/mp3-preview/99c2781c0b36010dc6293b3dd683395d69e0d2b3?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Goin' South - Original Mix",
+          url: "https://p.scdn.co/mp3-preview/d07bd4a6e3b737c31629e8e717b345e9c10ddc3e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Givin' It Up - Original Mix",
+          url: "https://p.scdn.co/mp3-preview/cf9e77ad6d9227869b651c3e222cc23cc02b1c5e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["darrin-hacquard"]: {
       name: "Darrin Hacquard",
@@ -103,6 +147,28 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla?si=YsBfwZ_RThqEdgaLUB_PnQ",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Hurricane Season",
+          url: "https://p.scdn.co/mp3-preview/4793e419694dc80dfaa2dcf8a4d74d13ae691f50?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "You Were a Friend",
+          url: "https://p.scdn.co/mp3-preview/22008ed55c0bbe263ecafae9a8d76102ba8bd93b?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Mountains",
+          url: "https://p.scdn.co/mp3-preview/e153935f6290dc4a0762a1e7a8d33a91f5bf164c?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "She's Gone (For Anna)",
+          url: "https://p.scdn.co/mp3-preview/00db34fa97412d5a39c9aeda1bdd8e2b67093086?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Never Again",
+          url: "https://p.scdn.co/mp3-preview/12ce45d3728305de488a37aab46134d6e17fe8d4?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["eric-bolander"]: {
       name: "Eric Bolander",
@@ -119,6 +185,28 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/search/eric%20bolander",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "The Wind",
+          url: "https://p.scdn.co/mp3-preview/d076baa57fcff7971dc1c0041216a5b607980998?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Oh Lord - Live",
+          url: "https://p.scdn.co/mp3-preview/19cfec528c9cfd7ec6f0781de724b79d1542bb33?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Cold Men - Live",
+          url: "https://p.scdn.co/mp3-preview/6e9e8d06fcbaff2942b480bf4ea5a1cba4d8aef4?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Can't Take Anymore - Live",
+          url: "https://p.scdn.co/mp3-preview/a42242996295c1ed8f291d6c4560d16660c2faa5?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "The Road",
+          url: "https://p.scdn.co/mp3-preview/974673e0c399bb975be6f9c94ef1b626f5d6c470?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["crypto-wave-radio"]: {
       name: "crypto WAVE radio",
@@ -138,6 +226,28 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Love Sick Dreams",
+          url: "https://p.scdn.co/mp3-preview/aca4f257f120b9764faeefba76f4ed8b5d2a8954?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Magick Every Sunday",
+          url: "https://p.scdn.co/mp3-preview/f97192ce59a7fb503ad55463f9044e7c50fa9b5e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Welcome To The Game",
+          url: "https://p.scdn.co/mp3-preview/82862a8b935e238cb525627bb6b80909558d3725?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "One Night Stand",
+          url: "https://p.scdn.co/mp3-preview/caf260ecabb647e2b75e6e037e745c63616a191d?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Long Distance Traveler",
+          url: "https://p.scdn.co/mp3-preview/f0760c4cf81248bacf0a047cf4f28309810d6e17?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["jaden-decker"]: {
       name: "Jaden Decker",
@@ -155,6 +265,28 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK?si=Pd47aO7CQe-Sjh3Tw5QOYA",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Father To Son",
+          url: "https://p.scdn.co/mp3-preview/bee83a4355e1d4fc27ebec2c1fe94dc8c81e9299?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Should've, Would've, Could've",
+          url: "https://p.scdn.co/mp3-preview/6ebe8a6c047bc1841b6d297376d09c9f32ad3442?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Rocky Mountain Shine",
+          url: "https://p.scdn.co/mp3-preview/0d54f71804bb904734024ae2371f651fd541fd84?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Goodbye Whisper",
+          url: "https://p.scdn.co/mp3-preview/e6a505f9ec5ee1a02556f49fd2fff3851fe7a363?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Long Gone",
+          url: "https://p.scdn.co/mp3-preview/758d0577a7e445baf579ed656832382f41dd9244?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["jeremy-short"]: {
       name: "Jeremy Short",
@@ -175,6 +307,28 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/@jeremyshortmusic",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "(Falling Into A) Trance",
+          url: "https://p.scdn.co/mp3-preview/bd9920ed84361fe0407893e73dede0693fb1d96e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Happy Trees",
+          url: "https://p.scdn.co/mp3-preview/55f5b07229c0d1531765b8156857d21802741d20?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Sorry, My Brother",
+          url: "https://p.scdn.co/mp3-preview/250430a2123ae7b799905806e5b4127547948ec0?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Rock Of Ages",
+          url: "https://p.scdn.co/mp3-preview/2b88f7e9c8141a823a7fb308933779ab2fb02339?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Time",
+          url: "https://p.scdn.co/mp3-preview/0c80f5b9b0160cd623108e6bc370b3774e0d5be0?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["root-shock"]: {
       name: "Root Shock",
@@ -186,6 +340,28 @@ export const data: DataConfig = {
         "Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes.",
       ],
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Ripple",
+          url: "https://p.scdn.co/mp3-preview/9f26f25d71e1c0ba0baa2378d8f48892546a4f0f?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Sunlight",
+          url: "https://p.scdn.co/mp3-preview/8d4f047fe86eb3c04092a3afbc852856fc798a82?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Come Alive",
+          url: "https://p.scdn.co/mp3-preview/52c5bd05f2700406e57a3a8c2aea66d7fed168e9?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Waves",
+          url: "https://p.scdn.co/mp3-preview/776315d4ed9ba6f75cf618574cda19a42a0e74eb?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Sage",
+          url: "https://p.scdn.co/mp3-preview/84d160467c2e50ce999874804cea5e7cdc72f8fb?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["sneezy"]: {
       name: "Sneezy",
@@ -202,6 +378,28 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/sneezymusic/",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Fat Girlfriend",
+          url: "https://p.scdn.co/mp3-preview/d9018ea543cee8b84c3ac6fbb936418e5653b651?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Vibez",
+          url: "https://p.scdn.co/mp3-preview/f50a94ad24f5e1ca70ec4c09e43a55151d3c8272?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Church in the Morning",
+          url: "https://p.scdn.co/mp3-preview/df5c8c9ed066f7ecc974769155c77bdbd58869a0?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Bacon",
+          url: "https://p.scdn.co/mp3-preview/0cb2c9686606f39cdd9072a795ecdab8a0b80114?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Busy Things (Live)",
+          url: "https://p.scdn.co/mp3-preview/f1643b7c17760df0b87744482995871d76a81e3e?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["the-talismen"]: {
       name: "The Talismen",
@@ -219,6 +417,28 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Lawnchair",
+          url: "https://p.scdn.co/mp3-preview/08fa18a6a96a7d016454315a7e59342035a89bc1?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Jerald with a G",
+          url: "https://p.scdn.co/mp3-preview/f578961ced5ae5e1eacb43bd403d52e40d32ede8?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Lawnchair - Live",
+          url: "https://p.scdn.co/mp3-preview/5ed5b9b7f2298e93cb6fe438ef89ae6944808492?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Changed Man",
+          url: "https://p.scdn.co/mp3-preview/184523df9b36e544927fbae2dbc0314d89c995a2?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Orange Sunshine",
+          url: "https://p.scdn.co/mp3-preview/f8f24065cf7c21a36e673b635e5e83174ce6117c?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["wayne-graham"]: {
       name: "Wayne Graham",
@@ -233,6 +453,28 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/wgmusic",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Real Speed Limit",
+          url: "https://p.scdn.co/mp3-preview/58070400c965376617a51dae208f9e6b647d524b?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Dark Kid (Ep.1)",
+          url: "https://p.scdn.co/mp3-preview/4d94164c7e3c6e9e7a0ee6b91a39cc29915fc0d8?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "How Was Your Night?",
+          url: "https://p.scdn.co/mp3-preview/03cd89ec44e4280602ea15e4f8e2e3cc086074d7?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Chifforobe",
+          url: "https://p.scdn.co/mp3-preview/7a3db50a673e77ff5f76fb0ef00a4f9e234bfdd7?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Misdemeanor Kisses",
+          url: "https://p.scdn.co/mp3-preview/d65dcdcb52042f4443cfee105b85931395dcd724?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["william-matheny"]: {
       name: "William Matheny",
@@ -263,6 +505,28 @@ export const data: DataConfig = {
           "https://www.youtube.com/channel/UCdiJL1kaXYJ57NwBHftWkog/featured",
       },
       agents: [AllenRoper, JasonMiles],
+      tracks: [
+        {
+          name: "Living Half to Death",
+          url: "https://p.scdn.co/mp3-preview/989b7553c5fcf084205367f7f2d768f894993216?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Blood Moon Singer",
+          url: "https://p.scdn.co/mp3-preview/7b8502d373e531c9d016883634ccd03c8b5eeca8?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "God's Left Hand",
+          url: "https://p.scdn.co/mp3-preview/5ca033115ad07921387284a1e97a3d434bea215c?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Moon Over Kenova",
+          url: "https://p.scdn.co/mp3-preview/4bbddf0c9ee89826aee9b793816aa76013c69b25?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "29 Candles",
+          url: "https://p.scdn.co/mp3-preview/41773114fa048c84765bcdace43c169835e2914a?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["funk-you"]: {
       name: "Funk You",
@@ -282,6 +546,28 @@ export const data: DataConfig = {
         instagram: "http://www.instagram.com/funkyoumusic",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "She's so High",
+          url: "https://p.scdn.co/mp3-preview/383043d3bb1a91e598f8541d75f73c9fd6ef459c?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Ring That Belle",
+          url: "https://p.scdn.co/mp3-preview/4a3f03b09b6e2e5e84bf2026a2c64404ce1d3ec1?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Supernatural",
+          url: "https://p.scdn.co/mp3-preview/199ba0dae914ba99932284a60f62148cd1f0657d?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Baby in a Bucket",
+          url: "https://p.scdn.co/mp3-preview/80feaeb92903c3d2102cc89255bddf088c3b0cac?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Red & Black",
+          url: "https://p.scdn.co/mp3-preview/c467bbead609adc844df71f5ac5e310e2041cb78?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["the-kind-thieves"]: {
       name: "The Kind Thieves",
@@ -295,6 +581,28 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Fire & Flood",
+          url: "https://p.scdn.co/mp3-preview/005779047babde9ed0ba801bdb56c8d617c96496?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Shallow Grave",
+          url: "https://p.scdn.co/mp3-preview/3998bf406d4a969a42f9cd79af695e4ef3e7402d?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Dear Mary",
+          url: "https://p.scdn.co/mp3-preview/6b536c9fe94be2ad22b98535d9a52676944240d3?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Children of the Sun",
+          url: "https://p.scdn.co/mp3-preview/d985e2c5f28120f65f948f5b804989b344ade8ae?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Armageddon",
+          url: "https://p.scdn.co/mp3-preview/0f866f41a17f3c5272fce628bf3633f0c38ef789?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["roxy-roca"]: {
       name: "ROXY ROCA",
@@ -321,6 +629,28 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
       },
       agents: [AllenRoper],
+      tracks: [
+        {
+          name: "Taurus",
+          url: "https://p.scdn.co/mp3-preview/156b2e071bedb80e2bfa0213d6b3c3830df7733b?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Mind Blown",
+          url: "https://p.scdn.co/mp3-preview/ea3a650f862bc1b6c81423da6f3926cd431dfc76?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Don't Call Me (Maybe I'll Call You)",
+          url: "https://p.scdn.co/mp3-preview/af59370b4a938d7e35743750b8f05b80687f50fc?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Try My Love",
+          url: "https://p.scdn.co/mp3-preview/2d25fd62c2835c5a7eccac8df96781aad139f821?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Cornbread",
+          url: "https://p.scdn.co/mp3-preview/b2fe492d12b82e59ae195caebc2f1cec37380a8a?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
     ["tand"]: {
       name: "Tand",
@@ -335,6 +665,28 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
       },
       agents: [AllenRoper, JasonMiles],
+      tracks: [
+        {
+          name: "Fortresses",
+          url: "https://p.scdn.co/mp3-preview/76a349cb6ae9edf08f6c51aaea8a8a4a0872bbc5?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Puzzle Piece",
+          url: "https://p.scdn.co/mp3-preview/a7befb737fe4de89aa1cb74a70aa52f231f4263c?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Opposite Attraction",
+          url: "https://p.scdn.co/mp3-preview/881443616f312780b6db94b4f6efb39cb100b71b?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Bloom Bloom (12/11/21) - Live",
+          url: "https://p.scdn.co/mp3-preview/ecd3e080fbe686a18adada5507f54c35e4510276?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "The Entertainer",
+          url: "https://p.scdn.co/mp3-preview/92354695bceecf3027854c771a909a569fe6d0a9?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
     },
   },
 };

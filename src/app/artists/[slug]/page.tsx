@@ -1,14 +1,127 @@
 import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
-import { data, Artist } from "data";
+import { data } from "data";
+import { Artist } from "types";
 import Image from "next/image";
 import Link from "next/link";
+import { TrackListingPlayer } from "./TrackListingPlayer";
 
 interface Props {
   params: {
     slug: string;
   };
 }
+
+interface MetadataProps {
+  artist: Artist;
+  className: string;
+}
+
+const Metadata = ({ artist, className }: MetadataProps) => {
+  return (
+    <dl
+      className={`${className} mt-10 border-t border-gray-900/10 divide-y flex flex-col divide-gray-900/10 pt-10`}
+    >
+      <div className="py-10">
+        <dt className="text-sm font-semibold leading-6 text-gray-600">
+          Responsible Agent{artist.agents.length > 1 ? "s" : ""}
+        </dt>
+        <div className="grid grid-cols-1 gap-8">
+          {artist.agents.map((agent, agentIdx) => (
+            <a
+              key={agentIdx}
+              href={`mailto:${agent.email}`}
+              className="group mt-2 flex flex-col leading-10 tracking-tight"
+            >
+              <span className="text-3xl font-bold text-gray-900">
+                {agent.name}
+                <svg
+                  viewBox="0 0 3 6"
+                  className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
+                >
+                  <path
+                    d="M0 0L3 3L0 6"
+                    fill="none"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="text-md text-gray-500">{agent.email}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <div className="py-10">
+        <div className="flex flex-col">
+          <h3 className={`text-md font-semibold leading-6 text-gray-600`}>
+            Media
+          </h3>
+          <ul
+            role="list"
+            className="mt-4 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+          >
+            {[
+              {
+                name: "IMG_4985.HEIC",
+                size: "3.9 MB",
+                source:
+                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+                current: true,
+              },
+              {
+                name: "IMG_4985.HEIC",
+                size: "3.9 MB",
+                source:
+                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+                current: true,
+              },
+              {
+                name: "IMG_4985.HEIC",
+                size: "3.9 MB",
+                source:
+                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+                current: true,
+              },
+              // More files...
+            ].map((file) => (
+              <li key={file.name} className="relative">
+                <div
+                  className={clsx(
+                    file.current
+                      ? "ring-2 ring-indigo-500 ring-offset-2"
+                      : "focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+                    "aspect-[10/7] group block w-full overflow-hidden rounded-lg bg-gray-100"
+                  )}
+                >
+                  <img
+                    src={file.source}
+                    alt=""
+                    className={clsx(
+                      file.current ? "" : "group-hover:opacity-75",
+                      "pointer-events-none object-cover"
+                    )}
+                  />
+                  <button
+                    type="button"
+                    className="absolute inset-0 focus:outline-none"
+                  >
+                    <span className="sr-only">
+                      View details for {file.name}
+                    </span>
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <TrackListingPlayer tracks={artist.tracks} />
+    </dl>
+  );
+};
 
 export default async function ArtistPage({ params }: Props) {
   const { slug } = params;
@@ -52,38 +165,7 @@ export default async function ArtistPage({ params }: Props) {
                 />
               </div>
             </div>
-            <dl className="mt-10 border-t border-gray-900/10 pt-10 hidden sm:block">
-              <dt className="text-sm font-semibold leading-6 text-gray-600">
-                Responsible Agent{artist.agents.length > 1 ? "s" : ""}
-              </dt>
-              <div className="grid grid-cols-1 gap-8">
-                {artist.agents.map((agent, agentIdx) => (
-                  <a
-                    key={agentIdx}
-                    href={`mailto:${agent.email}`}
-                    className="group mt-2 flex flex-col leading-10 tracking-tight"
-                  >
-                    <span className="text-3xl font-bold text-gray-900">
-                      {agent.name}
-                      <svg
-                        viewBox="0 0 3 6"
-                        className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
-                      >
-                        <path
-                          d="M0 0L3 3L0 6"
-                          fill="none"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span className="text-md text-gray-500">{agent.email}</span>
-                  </a>
-                ))}
-              </div>
-            </dl>
+            <Metadata artist={artist} className="hidden sm:block" />
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
@@ -114,38 +196,7 @@ export default async function ArtistPage({ params }: Props) {
               </div>
             ) : null}
           </div>
-          <dl className="border-t border-gray-900/10 pt-10 block sm:hidden">
-            <dt className="text-sm font-semibold leading-6 text-gray-600">
-              Responsible Agent{artist.agents.length > 1 ? "s" : ""}
-            </dt>
-            <div className="grid grid-cols-1 gap-8">
-              {artist.agents.map((agent, agentIdx) => (
-                <a
-                  href={`mailto:${agent.email}`}
-                  key={agentIdx}
-                  className="group mt-2 flex flex-col leading-10 tracking-tight"
-                >
-                  <span className="text-3xl font-bold text-gray-900">
-                    {agent.name}
-                    <svg
-                      viewBox="0 0 3 6"
-                      className="ml-4 w-auto h-2 overflow-visible inline -mt-px text-[#B9A48E] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
-                    >
-                      <path
-                        d="M0 0L3 3L0 6"
-                        fill="none"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-md text-gray-500">{agent.email}</span>
-                </a>
-              ))}
-            </div>
-          </dl>
+          <Metadata className="block sm:hidden" artist={artist} />
         </div>
       </div>
     </div>
