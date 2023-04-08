@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { data, Artist } from "data";
+import { data } from "data";
+import { Artist } from "types";
 import clsx from "clsx";
 
 const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
