@@ -5,6 +5,8 @@ import { Artist } from "types";
 import Image from "next/image";
 import Link from "next/link";
 import { TrackListingPlayer } from "./TrackListingPlayer";
+import { ListenNowButtons } from "./ListenNowButtons";
+import { ArtistMedia } from "./Media";
 
 interface Props {
   params: {
@@ -54,79 +56,14 @@ const Metadata = ({ artist, className }: MetadataProps) => {
           ))}
         </div>
       </div>
-      <div className="py-10">
-        <div className="flex flex-col">
-          <h3 className={`text-md font-semibold leading-6 text-gray-600`}>
-            Media
-          </h3>
-          <ul
-            role="list"
-            className="mt-4 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
-          >
-            {[
-              {
-                name: "IMG_4985.HEIC",
-                size: "3.9 MB",
-                source:
-                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-                current: true,
-              },
-              {
-                name: "IMG_4985.HEIC",
-                size: "3.9 MB",
-                source:
-                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-                current: true,
-              },
-              {
-                name: "IMG_4985.HEIC",
-                size: "3.9 MB",
-                source:
-                  "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-                current: true,
-              },
-              // More files...
-            ].map((file) => (
-              <li key={file.name} className="relative">
-                <div
-                  className={clsx(
-                    file.current
-                      ? "ring-2 ring-indigo-500 ring-offset-2"
-                      : "focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
-                    "aspect-[10/7] group block w-full overflow-hidden rounded-lg bg-gray-100"
-                  )}
-                >
-                  <img
-                    src={file.source}
-                    alt=""
-                    className={clsx(
-                      file.current ? "" : "group-hover:opacity-75",
-                      "pointer-events-none object-cover"
-                    )}
-                  />
-                  <button
-                    type="button"
-                    className="absolute inset-0 focus:outline-none"
-                  >
-                    <span className="sr-only">
-                      View details for {file.name}
-                    </span>
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <TrackListingPlayer tracks={artist.tracks} />
+      <TrackListingPlayer artist={artist} />
+      <ListenNowButtons artist={artist} />
+      <ArtistMedia artist={artist} />
     </dl>
   );
 };
 
 export default async function ArtistPage({ params }: Props) {
-  const { slug } = params;
-  const artist = data.artists[slug];
-
   return (
     <div className="bg-white py-20 sm:py-20">
       <div className="max-w-6xl sm:max-w-7xl mx-auto px-6 lg:px-8 mt-4">

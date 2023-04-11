@@ -1,16 +1,17 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
-import { Track } from "types";
+import { Artist, Track } from "types";
 import { PlayIcon, PauseIcon } from "@heroicons/react/24/solid";
 import { Equalizer } from "./Equalizer";
 import { data } from "data";
+import { ListenNowButtons } from "./ListenNowButtons";
 
 interface Props {
-  tracks: Track[];
+  artist: Artist;
 }
 
-export const TrackListingPlayer = ({ tracks }: Props) => {
+export const TrackListingPlayer = ({ artist }: Props) => {
   const ref = useRef<HTMLAudioElement | null>(null);
   const [currentAudioUrl, setCurrentAudioUrl] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -42,10 +43,6 @@ export const TrackListingPlayer = ({ tracks }: Props) => {
     };
   }, []);
 
-  if (!tracks.length) {
-    return null;
-  }
-
   const togglePlay = (url: string) => {
     if (currentAudioUrl === url) {
       if (!isPlaying) {
@@ -62,12 +59,7 @@ export const TrackListingPlayer = ({ tracks }: Props) => {
   };
 
   return (
-    <div
-      className={clsx(
-        // data.style.roster.trackListing,
-        "prose py-5 w-full py-10"
-      )}
-    >
+    <div className={clsx("prose w-full py-10")}>
       <div className="flex items-end">
         <h3 className={`text-md font-semibold leading-6 text-gray-600`}>
           Top Tracks
@@ -81,7 +73,7 @@ export const TrackListingPlayer = ({ tracks }: Props) => {
           "list-none columns-1 list-inside pl-0 not-prose mt-2 gap-8 space-y-2"
         )}
       >
-        {tracks.map((item, i) => (
+        {artist.tracks.map((item, i) => (
           <li
             key={item.name}
             className={clsx(

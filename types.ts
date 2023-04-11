@@ -13,12 +13,21 @@ export interface Track {
   url: string;
 }
 
+export interface ArtistListen {
+  amazon: string;
+  apple: string;
+  spotify: string;
+  youtube: string;
+}
+
 export interface Artist {
   name: string;
   imageUrl: string;
   bio?: string[];
   agents: Contact[];
   website?: string;
+  listen: ArtistListen;
+  media: string[];
   social?: {
     facebook?: string;
     instagram?: string;

@@ -73,6 +73,13 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/pricehillhustle",
         youtube: "https://www.youtube.com/@BuffaloWabs",
       },
+      media: ["/artists/buffalo-wabs-the-price-hill-hustle.jpg", "pMgYLD4JesE"],
+      listen: {
+        apple: "",
+        amazon: "",
+        spotify: "",
+        youtube: "",
+      },
       tracks: [
         {
           name: "Four Walls of Raiford",
@@ -217,6 +224,18 @@ export const data: DataConfig = {
         "In college, Austin was the man who brought the party. Sometimes he would host the rave, sometimes he would play music, sometimes he would hire touring bands; during one show where he threw together a band to open for Pigeons Playing Ping Pong, he started to really feel like he was on to something, and they decided to keep rehearsing. It helped that two of the other members were his brothers, Mike and Logan, so they set out under the moniker LITZ. The cast of characters has rotated around them but they still play regularly and release new music together, including many of the tracks made under cryptoWAVEradio.",
         "When the pandemic hit and live bands were entirely shut down, Austin turned to his computer and the tools he had to find the creative outlet he needed. At the same time, the internet was abuzz with talk of NFTs, or non-fungible tokens, which are, in short, digitally certified one-of-a-kind digital pieces of art that can be worth a lot of cryptocurrency. He took the opportunity to live-stream his self-education on creating unique house/bass music and joke with some of his followers about NFTs. Now, cryptoWAVEradio has evolved into Austin’s use of Ableton Live, digital and analog synths, drum machines, just about every real instrument including all sorts of saxophones, flutes, world instruments like bells and didgeridoo, and more.",
         "cryptoWAVEradio performs live with Austin’s custom built tower of electronic improvisations. He is often joined by his Venus Rising Dancers and occasionally with live drums from Samwise the Great. “It’s a spellbinding combination of driving synthwave bass, humorous and ironic lyrics and banter,” says The Jamwich. “Austin’s iconic saxophone and flute accompaniment... [cryptoWAVEradio is] all the vibes to fuel an economic and music revolution.”",
+      ],
+      listen: {
+        apple: "",
+        amazon: "",
+        spotify: "",
+        youtube: "",
+      },
+      media: [
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "ZoEXrYfy6wY",
       ],
       social: {
         facebook: "https://m.facebook.com/cryptowaveradio",
@@ -417,6 +436,18 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
       agents: [AllenRoper],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B00I2JTMLE/the-talismen",
+        apple: "https://music.apple.com/us/artist/the-talismen/1452078912",
+        spotify: "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ",
+        youtube: "https://music.youtube.com/channel/UCVMMSKOYUAejnLD-UpgF4oQ",
+      },
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/info_ix1iep.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/tour_vfti1v.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/news_qeqjoq.jpg",
+        "D-An_iGtyYQ",
+      ],
       tracks: [
         {
           name: "Lawnchair",
