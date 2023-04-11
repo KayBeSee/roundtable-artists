@@ -497,9 +497,9 @@ export const data: DataConfig = {
       },
       agents: [AllenRoper],
       media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/info_ix1iep.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/tour_vfti1v.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/news_qeqjoq.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/info_ix1iep.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/tour_vfti1v.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/news_qeqjoq.jpg",
         "D-An_iGtyYQ",
       ],
       listen: {
