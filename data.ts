@@ -266,12 +266,7 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
       agents: [AllenRoper],
-      media: [
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "ZoEXrYfy6wY",
-      ],
+      media: [],
       listen: {
         spotify: "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF",
       },
