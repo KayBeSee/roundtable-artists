@@ -9,12 +9,11 @@ import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
 interface Props {
   artist: Artist;
-  images: string[];
 }
 
-export const ArtistMedia = ({ artist, images }: Props) => {
+export const ArtistMedia = ({ artist }: Props) => {
   let [isModalOpen, setIsModalOpen] = useState(false);
-  let [content, setContent] = useState<JSX.Element>(null);
+  let [content, setContent] = useState<JSX.Element>(<div></div>);
 
   const clickMedia = (file: string) => {
     const isVideo = !file.includes(".com");

@@ -64,6 +64,9 @@ const Metadata = ({ artist, className }: MetadataProps) => {
 };
 
 export default async function ArtistPage({ params }: Props) {
+  const { slug } = params;
+  const artist = data.artists[slug];
+
   return (
     <div className="bg-white py-20 sm:py-20">
       <div className="max-w-6xl sm:max-w-7xl mx-auto px-6 lg:px-8 mt-4">
