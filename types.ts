@@ -14,10 +14,10 @@ export interface Track {
 }
 
 export interface ArtistListen {
-  amazon: string;
-  apple: string;
-  spotify: string;
-  youtube: string;
+  amazon?: string;
+  apple?: string;
+  spotify?: string;
+  youtube?: string;
 }
 
 export interface Artist {

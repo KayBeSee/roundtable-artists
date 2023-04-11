@@ -36,6 +36,13 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd?si=E6AiuFCsTpiMyoJ8_9F_QA&nd=1",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B002XTJBY2",
+        apple: "https://music.apple.com/us/artist/litz/1541184479?app=music",
+        spotify: "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd",
+        youtube: "https://youtube.com/channel/UCK41wtB_yD3IWCKi6mUKm6A",
+      },
       tracks: [
         {
           name: "Morning Dew",
@@ -75,10 +82,11 @@ export const data: DataConfig = {
       },
       media: ["/artists/buffalo-wabs-the-price-hill-hustle.jpg", "pMgYLD4JesE"],
       listen: {
-        apple: "",
-        amazon: "",
-        spotify: "",
-        youtube: "",
+        apple:
+          "https://music.apple.com/us/artist/buffalo-wabs-the-price-hill-hustle/898140828?app=music",
+        amazon: "https://music.amazon.com/artists/B00LQLF6MY",
+        spotify: "https://open.spotify.com/artist/4bVIBJHmQxWrvBZOrea5p5",
+        youtube: "https://music.youtube.com/browse/UC3Lgi7PqAUYm1Fs5c1_XBdw",
       },
       tracks: [
         {
@@ -117,6 +125,14 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/charliebrownsuperstar/?hl=en",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B002A7KTD4",
+        apple:
+          "https://music.apple.com/us/artist/charlie-brown-superstar/316883023?app=music",
+        spotify: "https://open.spotify.com/artist/3qIsKXFoNrxUCpgmTl5hlQ",
+        youtube: "https://music.youtube.com/browse/UCvMgwa6qgYdSofC2jEIWIRw",
+      },
       tracks: [
         {
           name: "Never Gonna Stop - Original Mix",
@@ -154,6 +170,14 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla?si=YsBfwZ_RThqEdgaLUB_PnQ",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B075GZKSBT",
+        apple:
+          "https://music.apple.com/us/artist/darrin-hacquard/1278631455?app=music",
+        spotify: "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla",
+        youtube: "https://music.youtube.com/browse/UCijtSH7bvbmw14IIGDPEffA",
+      },
       tracks: [
         {
           name: "Hurricane Season",
@@ -192,6 +216,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/search/eric%20bolander",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B01C73SH52",
+        apple:
+          "https://music.apple.com/us/artist/eric-bolander/1087649369?app=music",
+        spotify: "https://open.spotify.com/artist/2CYVlOC4GmL0vpjXoKESpJ",
+        youtube: "https://music.youtube.com/browse/UCbHG04bvlVGhe9Xk5nBgCZA",
+      },
       tracks: [
         {
           name: "The Wind",
@@ -225,18 +257,7 @@ export const data: DataConfig = {
         "When the pandemic hit and live bands were entirely shut down, Austin turned to his computer and the tools he had to find the creative outlet he needed. At the same time, the internet was abuzz with talk of NFTs, or non-fungible tokens, which are, in short, digitally certified one-of-a-kind digital pieces of art that can be worth a lot of cryptocurrency. He took the opportunity to live-stream his self-education on creating unique house/bass music and joke with some of his followers about NFTs. Now, cryptoWAVEradio has evolved into Austin’s use of Ableton Live, digital and analog synths, drum machines, just about every real instrument including all sorts of saxophones, flutes, world instruments like bells and didgeridoo, and more.",
         "cryptoWAVEradio performs live with Austin’s custom built tower of electronic improvisations. He is often joined by his Venus Rising Dancers and occasionally with live drums from Samwise the Great. “It’s a spellbinding combination of driving synthwave bass, humorous and ironic lyrics and banter,” says The Jamwich. “Austin’s iconic saxophone and flute accompaniment... [cryptoWAVEradio is] all the vibes to fuel an economic and music revolution.”",
       ],
-      listen: {
-        apple: "",
-        amazon: "",
-        spotify: "",
-        youtube: "",
-      },
-      media: [
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
-        "ZoEXrYfy6wY",
-      ],
+
       social: {
         facebook: "https://m.facebook.com/cryptowaveradio",
         instagram: "instagram.com/crypto_wav",
@@ -245,6 +266,15 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
       agents: [AllenRoper],
+      media: [
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
+        "ZoEXrYfy6wY",
+      ],
+      listen: {
+        spotify: "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF",
+      },
       tracks: [
         {
           name: "Love Sick Dreams",
@@ -284,6 +314,14 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK?si=Pd47aO7CQe-Sjh3Tw5QOYA",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B07V3NSRDK",
+        apple:
+          "https://music.apple.com/us/artist/jaden-decker/1472300542?app=music",
+        spotify: "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK",
+        youtube: "https://music.youtube.com/browse/UCPxa6Rte89L7_DHuX7G2VEQ",
+      },
       tracks: [
         {
           name: "Father To Son",
@@ -326,6 +364,14 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/@jeremyshortmusic",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B01BBIRYLC",
+        apple:
+          "https://music.apple.com/us/artist/jeremy-short/1078901614?app=music",
+        spotify: "https://open.spotify.com/artist/7mwUDOg57rFeb5E3bp1pJU",
+        youtube: "https://music.youtube.com/browse/UC1f_rc-4tsgToanV2nw6OJA",
+      },
       tracks: [
         {
           name: "(Falling Into A) Trance",
@@ -359,6 +405,14 @@ export const data: DataConfig = {
         "Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes.",
       ],
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B01MYZPWZ8",
+        apple:
+          "https://music.apple.com/us/artist/root-shock/1183825793?app=music",
+        spotify: "https://open.spotify.com/artist/2D8mRcIwXqUXTdk6acguCp",
+        youtube: "https://music.youtube.com/browse/UCuWRtq9lrt7ZybQ-eghi77Q",
+      },
       tracks: [
         {
           name: "Ripple",
@@ -397,6 +451,12 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/sneezymusic/",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B00147W2ZO",
+        apple: "https://music.apple.com/us/artist/sneezy/335190308?app=music",
+        spotify: "https://open.spotify.com/artist/6q8zf3mxlxOVOm1YXM5JJp",
+      },
       tracks: [
         {
           name: "Fat Girlfriend",
@@ -436,18 +496,18 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
       agents: [AllenRoper],
-      listen: {
-        amazon: "https://music.amazon.com/artists/B00I2JTMLE/the-talismen",
-        apple: "https://music.apple.com/us/artist/the-talismen/1452078912",
-        spotify: "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ",
-        youtube: "https://music.youtube.com/channel/UCVMMSKOYUAejnLD-UpgF4oQ",
-      },
       media: [
         "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/info_ix1iep.jpg",
         "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/tour_vfti1v.jpg",
         "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200,g_face/v1681221500/news_qeqjoq.jpg",
         "D-An_iGtyYQ",
       ],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B00I2JTMLE/the-talismen",
+        apple: "https://music.apple.com/us/artist/the-talismen/1452078912",
+        spotify: "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ",
+        youtube: "https://music.youtube.com/channel/UCVMMSKOYUAejnLD-UpgF4oQ",
+      },
       tracks: [
         {
           name: "Lawnchair",
@@ -484,6 +544,14 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/wgmusic",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B003FEQBIS",
+        apple:
+          "https://music.apple.com/us/artist/wayne-graham/365830114?app=music",
+        spotify: "https://open.spotify.com/artist/24uPvkJPfMYve7yvVliW8G",
+        youtube: "https://music.youtube.com/browse/UC65uxtnzUd0pE4J-OytYJ9w",
+      },
       tracks: [
         {
           name: "Real Speed Limit",
@@ -536,6 +604,14 @@ export const data: DataConfig = {
           "https://www.youtube.com/channel/UCdiJL1kaXYJ57NwBHftWkog/featured",
       },
       agents: [AllenRoper, JasonMiles],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B0016NER4K",
+        apple:
+          "https://music.apple.com/us/artist/william-matheny/1172936365?app=music",
+        spotify: "https://open.spotify.com/artist/5ffXgMSb7TTuOLvb56MxGx",
+        youtube: "https://music.youtube.com/browse/UCQ1TeQSjR_0Zza4XzVtLyqg",
+      },
       tracks: [
         {
           name: "Living Half to Death",
@@ -577,6 +653,13 @@ export const data: DataConfig = {
         instagram: "http://www.instagram.com/funkyoumusic",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B0051D59ZW",
+        apple: "https://music.apple.com/us/artist/funk-you/400528998?app=music",
+        spotify: "https://open.spotify.com/artist/1ydMwlr8PsTcShNu8uqDvz",
+        youtube: "https://music.youtube.com/browse/UCMqnfb0Ia8HVYhXh5Iatv-g",
+      },
       tracks: [
         {
           name: "She's so High",
@@ -612,6 +695,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B078VM2GM1",
+        apple:
+          "https://music.apple.com/us/artist/the-kind-thieves/1332136662?app=music",
+        spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
+        youtube: "https://music.youtube.com/browse/UClm762ZJWm1oeMOW8bP-_ug",
+      },
       tracks: [
         {
           name: "Fire & Flood",
@@ -660,6 +751,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
       },
       agents: [AllenRoper],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B00PGXOXBS",
+        apple:
+          "https://music.apple.com/us/artist/roxy-roca/940172820?app=music",
+        spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
+        youtube: "https://youtube.com/channel/UCQXx4P8DlBgO8j8y6rDghWA",
+      },
       tracks: [
         {
           name: "Taurus",
@@ -696,6 +795,13 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
       },
       agents: [AllenRoper, JasonMiles],
+      media: [],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B001TVS5WE",
+        apple: "https://music.apple.com/us/artist/tand/1486254695?app=music",
+        spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
+        youtube: "https://music.youtube.com/browse/UCxIDC1GA1JJFTnSoxJ12MWw",
+      },
       tracks: [
         {
           name: "Fortresses",
