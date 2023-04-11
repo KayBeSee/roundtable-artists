@@ -80,7 +80,7 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/pricehillhustle",
         youtube: "https://www.youtube.com/@BuffaloWabs",
       },
-      media: ["/artists/buffalo-wabs-the-price-hill-hustle.jpg", "pMgYLD4JesE"],
+      media: ["pMgYLD4JesE"],
       listen: {
         apple:
           "https://music.apple.com/us/artist/buffalo-wabs-the-price-hill-hustle/898140828?app=music",
