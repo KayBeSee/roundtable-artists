@@ -15,6 +15,11 @@ export const ArtistMedia = ({ artist }: Props) => {
   let [isModalOpen, setIsModalOpen] = useState(false);
   let [content, setContent] = useState<JSX.Element>(<div></div>);
 
+  // if no media, remove this section
+  if (artist.media.length === 0) {
+    return null;
+  }
+
   const clickMedia = (file: string) => {
     const isVideo = !file.includes(".com");
     const imageUrl = isVideo
