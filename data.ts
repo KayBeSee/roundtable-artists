@@ -4,11 +4,37 @@ const AllenRoper: Contact = {
   name: "Allen Roper",
   email: "allenroper12@gmail.com",
   phone: "706-347-0448",
+  type: "all",
 };
 
 const JasonMiles: Contact = {
   name: "Jason Miles",
   email: "milesandmilesentertainment@gmail.com",
+  type: "all",
+};
+
+const MattKolinski: Contact = {
+  name: "Matt Kolinski",
+  email: "matt@liveatnectars.com",
+  type: "management",
+};
+
+const EricPuente: Contact = {
+  name: "Eric Puente",
+  email: "eric.puente@royalartistgroup.com",
+  type: "booking",
+};
+
+const JordanCarriere: Contact = {
+  name: "Jordan Carriere",
+  email: "jordan@alpine-partners.net",
+  type: "booking",
+};
+
+const MichaelKrell: Contact = {
+  name: "Michael Krell",
+  email: "michael@experiencerta.com",
+  type: "booking",
 };
 
 export const data: DataConfig = {
@@ -35,8 +61,11 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd?si=E6AiuFCsTpiMyoJ8_9F_QA&nd=1",
       },
-      agents: [AllenRoper],
-      media: [],
+      agents: [{ ...AllenRoper, type: "management" }, JordanCarriere],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681398882/Promo6_y8kkfq.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681399164/Promo3_farpky.jpg",
+      ],
       listen: {
         amazon: "https://music.amazon.com/artists/B002XTJBY2",
         apple: "https://music.apple.com/us/artist/litz/1541184479?app=music",
@@ -74,7 +103,7 @@ export const data: DataConfig = {
         "They pull from all sorts of genres—from Lead Belly to John Prine, from Woody Guthrie to Willy Tea Taylor —to create something unique and deep-rooted. These guys lean into the rhythms of the Ohio River Valley—where they’ve walked upon—and look to the songs in the muddy water and the tradition it carries.",
         "To get “hustled” is to get the full-body musical experience—that head-boppin’, hip-swaying, soul-singing with the stranger next to you. It’s the kind of music that encapsulates you into a community of sound, one that becomes familiar once you hear it, like maybe, you’ve been listening to them forever.",
       ],
-      agents: [AllenRoper, JasonMiles],
+      agents: [AllenRoper],
       social: {
         instagram: "https://www.instagram.com/pricehillhustle",
         facebook: "https://www.facebook.com/pricehillhustle",
@@ -249,7 +278,7 @@ export const data: DataConfig = {
     },
     ["crypto-wave-radio"]: {
       name: "crypto WAVE radio",
-      imageUrl: "crypto-wave-radio.jpg",
+      imageUrl: "crypto-wave-radio.jpeg",
       bio: [
         "Austin Litz was born for this. Music is in his blood, passion pumps his heart, and the future is on his mind, so he’s using what he knows to embrace the new world of crypto and NFTs. His new house/bass project, cryptoWAVEradio, is Austin’s pandemic distraction-turned-new career and second band. Since launching the cryptoWAVEradio live stream, where he explains his production techniques and discusses the blossoming NFT scene, Austin has posted over 100 NFTs for sale on the opensea.io marketplace, raised around $10K for Dance Safe through collaborations, and has started producing records for other artists, including his own and that of his original live band, LITZ.",
         "Coming from a long line of Italian music makers, Austin’s grandfather was one of the first guitar players to introduce the electric guitar to Washington, D.C.. He later went on to establish the Litz Music Center in Maryland which still sells instruments and offers lessons today, under the same family ownership. Austin grew up in the shop, messing around with any instruments he wanted and eventually landing in violin and saxophone lessons. He was inspired by the clientele, blue collar musicians supporting their modest music careers and bigger name touring rockers, alike.",
@@ -265,8 +294,11 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
-      agents: [AllenRoper],
-      media: [],
+      agents: [{ ...AllenRoper, type: "management" }, JordanCarriere],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681396608/photo_mar_18_2023_8_15_51_pm_1_1_twput4.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681396608/photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv.jpg",
+      ],
       listen: {
         spotify: "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF",
       },
@@ -308,7 +340,7 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK?si=Pd47aO7CQe-Sjh3Tw5QOYA",
       },
-      agents: [AllenRoper],
+      agents: [JasonMiles],
       media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B07V3NSRDK",
@@ -647,7 +679,7 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/c/funkyoumusic",
         instagram: "http://www.instagram.com/funkyoumusic",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "management" }, MattKolinski, EricPuente],
       media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B0051D59ZW",
@@ -817,6 +849,103 @@ export const data: DataConfig = {
         {
           name: "The Entertainer",
           url: "https://p.scdn.co/mp3-preview/92354695bceecf3027854c771a909a569fe6d0a9?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
+    },
+    ["brothers-gillespie"]: {
+      name: "The Brothers Gillespie",
+      imageUrl: "brothers-gillespie.jpeg",
+      website: "https://www.brothersgillespie.com/",
+      bio: [
+        `Drawing from their Southern Appalachian roots and channeling the gritty rock ‘n’ roll they were raised on, The Brothers Gillespie spin heartfelt yarns with an alternative edge”.  Blending beautiful, catchy lyricism in the vein of the Avett Brothers, with a Futurebirds approach to pure good time rock n roll, The Brothers Gillespie deliver a modern homegrown sound that could pass for your favorite vinyl record.`,
+      ],
+      social: {
+        instagram: "https://www.instagram.com/thebrothersgillespie/",
+        facebook: "https://www.facebook.com/thebrothersgillespie/",
+      },
+      agents: [MichaelKrell],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681403154/The_Brothers_Gillespie_vssnqk.jpg",
+        "Xsc2Ms3-Bhk",
+      ],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B07GWYRMLG",
+        apple:
+          "https://music.apple.com/us/artist/the-brothers-gillespie/1434411437?app=music",
+        spotify: "https://open.spotify.com/artist/0Qzs6k37sHst4PoLSzJFVW",
+        youtube: "https://youtube.com/channel/UCxMy56IY_OCBAVWa6u7HLag",
+      },
+      tracks: [
+        {
+          name: "Angst & Ivory",
+          url: "https://p.scdn.co/mp3-preview/12e607ace691deb4fa24b2d0a78819495bcb2703?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "October Greene",
+          url: "https://p.scdn.co/mp3-preview/b60ab56a8df18382a9156ee8628ba3ca1784d315?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Bilberry Blues",
+          url: "https://p.scdn.co/mp3-preview/f8a46d50f9571df84558bbf3b2032efff02eccf9?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Not Another Love Song",
+          url: "https://p.scdn.co/mp3-preview/51807b5e53f3541c50d71b68a31c873306e9f836?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Headlights",
+          url: "https://p.scdn.co/mp3-preview/8c5cb29ce256bd9c07e5beb742f18cb576fc9ec6?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+      ],
+    },
+    ["kyle-kelly"]: {
+      name: "Kyle Kelly",
+      imageUrl: "kyle-kelly.jpeg",
+      website: "https://kylekellyofficial.com/",
+      bio: [
+        `Kyle Kelly, a North Carolina native, discovered his love for music at the early age of eight. Kyle was drawn to the old classic sounds of greats such as Lynyrd Skynyrd and Waylon Jennings, which inspired him to learn guitar and drums. From classic cars to classic country music, this 26 year old country music artist is a true throwback, embracing the look and sounds of the ‘70s and ‘80s. A nostalgic feel is often reflected in Kyle’s music while still implementing his own personal touch of a modern spin.`,
+      ],
+      social: {
+        instagram: "https://www.instagram.com/kylekelly_music/",
+        facebook: "https://www.facebook.com/kyle.kelly.9693",
+      },
+      agents: [MichaelKrell],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402957/Kyle_Kelly_Tour_Pic_4_y7i8du.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402956/Kyle_Kelly_Radio_Room_zu4b6x.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402956/Kyle_Kelly_Tour_Pic_3_ddt6zc.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402955/Kyle_Kelly_Tour_Pic_2_rot4s5.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402954/KK_930_Club_dw5byx.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402954/Kyle_Kelly_Tour_Pic_1_zxmn4n.jpg",
+        "DjM02C9vgqM",
+      ],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B07FS7RXK6",
+        apple:
+          "https://music.apple.com/us/artist/kyle-kelly/1522538786?app=music",
+        spotify: "https://open.spotify.com/artist/608zlyuQHcUfZWSzIV2RtO",
+        youtube: "https://youtube.com/channel/UCQpcQDkgRi1MeRbL1haYGYA",
+      },
+      tracks: [
+        {
+          name: "Angst & Ivory",
+          url: "https://p.scdn.co/mp3-preview/12e607ace691deb4fa24b2d0a78819495bcb2703?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "October Greene",
+          url: "https://p.scdn.co/mp3-preview/b60ab56a8df18382a9156ee8628ba3ca1784d315?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Bilberry Blues",
+          url: "https://p.scdn.co/mp3-preview/f8a46d50f9571df84558bbf3b2032efff02eccf9?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Not Another Love Song",
+          url: "https://p.scdn.co/mp3-preview/51807b5e53f3541c50d71b68a31c873306e9f836?cid=cfe923b2d660439caf2b557b21f31221",
+        },
+        {
+          name: "Headlights",
+          url: "https://p.scdn.co/mp3-preview/8c5cb29ce256bd9c07e5beb742f18cb576fc9ec6?cid=cfe923b2d660439caf2b557b21f31221",
         },
       ],
     },

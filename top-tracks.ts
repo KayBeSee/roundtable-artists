@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const SPOTIFY_TOKEN =
-  "BQBdZcqh-pi-NDL-qOGWvUpfBJHQj9u6uCev8pJIkZvJ4I-E7PEqXdvINidiSr2JC7Ha78x4uJP6lOd1xWCY1zJrYYBARlj-JTy9Q6Wu5uKnEH-yqeZtufnQ-X4Sd3CvbU1Q7Ukt-G912WxjySph-QOsbUOE0feKlA3u_rFvSHdDDgmYu2gvlyl_I5oefy84HtqJn9NOLaHJeoRIh_yjRTFo-WKAAPQF3U_4V-eb292ZuwYEfG0Mn4T_XxnXr9pk8rGju6-9FOcexnKtbayWcGoa9B8HBdX_ttusY1UqwrD9FXMW8CZETGAJbzB2D5BvVWRyzshy_lzM5kls6VY-BGp1BXs";
+  "BQBXi50e3KDbvylfC0Tdo_cYrdKOY-M1xUko3yM0LIFLbo7EXFWI4Vr9I1hgJT2ZPZAKerAfVGLRoaqqaFFnvcaZJDkMlyQQ6UxiNeEDi0QD4MIyYMW-sEjMBlUCWoeAw_ASG52hc56W-XLFAxCsFA8mGdahoHHdAEVs2HKUEF64eOKKLB1MNSjsuCpNn2L5WSvHmqbO4Inp8n57Ambk8HCE8LLyHZ4iwnpLQgLJ0fucHbt9aWxfl43Zaa0Ne26hZ4PqZ2lxtiaJqR5UV0_As-LIdY94t10EJNb4uOIgx766EsKsb5Q8LWZ-EX--KZPkzACmdMll5_49szAPlrj2tTzlix4";
 
 const main = async () => {
   const identifier = process.argv[2];
@@ -15,7 +15,7 @@ const main = async () => {
 
   const formatted = data.tracks
     .splice(0, 5)
-    .map((track: any) => ({ name: track.name, url: track.preview_url }));
+    .map((track) => ({ name: track.name, url: track.preview_url }));
 
   console.log("tracks: ", formatted);
 

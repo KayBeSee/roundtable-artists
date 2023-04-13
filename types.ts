@@ -47,4 +47,5 @@ export interface Contact {
   name: string;
   email: string;
   phone?: string;
+  type: "booking" | "management" | "all";
 }

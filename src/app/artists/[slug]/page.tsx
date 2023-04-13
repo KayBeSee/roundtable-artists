@@ -25,7 +25,7 @@ const Metadata = ({ artist, className }: MetadataProps) => {
       className={`${className} mt-10 border-t border-gray-900/10 divide-y flex flex-col divide-gray-900/10 pt-10`}
     >
       <div className="py-10">
-        <dt className="text-sm font-semibold leading-6 text-gray-600">
+        <dt className="text-sm font-semibold leading-6 text-gray-600 mb-3">
           Responsible Agent{artist.agents.length > 1 ? "s" : ""}
         </dt>
         <div className="grid grid-cols-1 gap-8">
@@ -33,8 +33,13 @@ const Metadata = ({ artist, className }: MetadataProps) => {
             <a
               key={agentIdx}
               href={`mailto:${agent.email}`}
-              className="group mt-2 flex flex-col leading-10 tracking-tight"
+              className="group mt-2 flex flex-col tracking-tight"
             >
+              {agent.type === "all" ? null : (
+                <span className="capitalize text-sm text-gray-500 mb-0">
+                  {agent.type}
+                </span>
+              )}
               <span className="text-3xl font-bold text-gray-900">
                 {agent.name}
                 <svg
@@ -51,7 +56,7 @@ const Metadata = ({ artist, className }: MetadataProps) => {
                   />
                 </svg>
               </span>
-              <span className="text-md text-gray-500">{agent.email}</span>
+              <span className="text-md text-gray-500 mt-1">{agent.email}</span>
             </a>
           ))}
         </div>
