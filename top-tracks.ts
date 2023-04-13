@@ -15,6 +15,7 @@ const main = async () => {
 
   const formatted = data.tracks
     .splice(0, 5)
+    // @ts-ignore
     .map((track) => ({ name: track.name, url: track.preview_url }));
 
   console.log("tracks: ", formatted);
