@@ -27,7 +27,8 @@ export interface Artist {
   agents: Contact[];
   website?: string;
   listen: ArtistListen;
-  media: string[];
+  photos?: string[];
+  videos?: string[];
   social?: {
     facebook?: string;
     instagram?: string;
@@ -47,5 +48,6 @@ export interface Contact {
   name: string;
   email: string;
   phone?: string;
-  type: "booking" | "management" | "all";
+  type?: "booking" | "management" | "all";
+  title?: string;
 }

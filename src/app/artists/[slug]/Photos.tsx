@@ -1,9 +1,9 @@
 "use client";
+import { Fragment, useState } from "react";
 import clsx from "clsx";
 import { Dialog, Transition } from "@headlessui/react";
 
 import { Artist } from "types";
-import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
@@ -11,47 +11,41 @@ interface Props {
   artist: Artist;
 }
 
-export const ArtistMedia = ({ artist }: Props) => {
+export const ArtistPhotos = ({ artist }: Props) => {
   let [isModalOpen, setIsModalOpen] = useState(false);
   let [content, setContent] = useState<JSX.Element>(<div></div>);
 
   // if no media, remove this section
-  if (artist.media.length === 0) {
+  if (!artist.photos || artist.photos?.length === 0) {
     return null;
   }
 
-  const clickMedia = (file: string) => {
-    const isVideo = !file.includes(".com");
-    const imageUrl = isVideo
-      ? `https://img.youtube.com/vi/${file}/0.jpg`
-      : file;
-
-    if (isVideo) {
-      setContent(
-        <iframe
-          width="560"
-          height="315"
-          src={`https://www.youtube.com/embed/${file}?autoplay=1`}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      );
-    } else {
-      setContent(
+  const clickPhoto = (file: string) => {
+    setContent(
+      <>
         <Image
-          src={imageUrl}
+          src={`https://res.cloudinary.com/dyxybmew8/image/upload/w_1280/${file}.jpg`}
+          blurDataURL={`https://res.cloudinary.com/dyxybmew8/image/upload/w_32/${file}.jpg`}
+          placeholder="blur"
           alt=""
-          width={250}
-          height={250}
+          width={1280}
+          height={853}
           className={clsx(
             "group-hover:opacity-75",
+            "aspect-[3/2]",
             "pointer-events-none object-cover"
           )}
         />
-      );
-    }
+        <a
+          href={`https://res.cloudinary.com/dyxybmew8/image/upload/${file}.jpg`}
+          download={`${file}.jpg`}
+          className="flex items-center text-gray-100 group absolute"
+        >
+          <ArrowDownCircleIcon className="w-4 h-4 mr-1" />
+          <span className="group-hover:underline">Download</span>
+        </a>
+      </>
+    );
   };
 
   return (
@@ -91,10 +85,6 @@ export const ArtistMedia = ({ artist }: Props) => {
               <Dialog.Panel className="mx-auto max-w-2xl rounded bg-white relative">
                 {content}
               </Dialog.Panel>
-              <div className="flex items-center text-gray-100 group">
-                <ArrowDownCircleIcon className="w-4 h-4 mr-1" />
-                <span className="group-hover:underline">Download</span>
-              </div>
             </div>
           </Transition.Child>
         </Dialog>
@@ -102,17 +92,14 @@ export const ArtistMedia = ({ artist }: Props) => {
       <div className="py-10">
         <div className="flex flex-col">
           <h3 className={`text-md font-semibold leading-6 text-gray-600`}>
-            Media
+            Photos
           </h3>
           <ul
             role="list"
             className="mt-4 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
           >
-            {artist.media.map((file, i) => {
-              const isVideo = !file.includes(".com");
-              const imageUrl = isVideo
-                ? `https://img.youtube.com/vi/${file}/0.jpg`
-                : file;
+            {artist.photos?.map((file, i) => {
+              const imageUrl = `https://res.cloudinary.com/dyxybmew8/image/upload/w_120,h_84/${file}.jpg`;
 
               return (
                 <li key={i} className="relative">
@@ -146,7 +133,7 @@ export const ArtistMedia = ({ artist }: Props) => {
                       type="button"
                       className="absolute inset-0 focus:outline-none"
                       onClick={() => {
-                        clickMedia(file);
+                        clickPhoto(file);
                         setIsModalOpen(true);
                       }}
                     >

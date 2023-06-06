@@ -2,15 +2,17 @@ import { DataConfig, Contact } from "types";
 
 const AllenRoper: Contact = {
   name: "Allen Roper",
-  email: "allenroper12@gmail.com",
+  email: "Allen@experienceRTA.com",
   phone: "706-347-0448",
   type: "all",
+  title: "Agent | Manager | Owner",
 };
 
 const JasonMiles: Contact = {
   name: "Jason Miles",
-  email: "milesandmilesentertainment@gmail.com",
+  email: "ason@experienceRTA.com",
   type: "all",
+  title: "Agent | Manager",
 };
 
 const MattKolinski: Contact = {
@@ -33,14 +35,21 @@ const JordanCarriere: Contact = {
 
 const MichaelKrell: Contact = {
   name: "Michael Krell",
-  email: "michael@experiencerta.com",
+  email: "Michael@experienceRTA.com",
   type: "booking",
+  title: "Agent Assistant",
+};
+
+const KevinLynch: Contact = {
+  name: "Kevin Lynch",
+  email: "Kevin@experienceRTA.com",
+  title: "Finance Manager",
 };
 
 export const data: DataConfig = {
   name: "Roundtable Artists",
   description: "",
-  contacts: [AllenRoper, JasonMiles],
+  contacts: [AllenRoper, JasonMiles, MichaelKrell, KevinLynch],
   style: {
     roster: {
       trackListing: "text-[#B9A48E] text-white",
@@ -61,11 +70,8 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd?si=E6AiuFCsTpiMyoJ8_9F_QA&nd=1",
       },
-      agents: [{ ...AllenRoper, type: "management" }, JordanCarriere],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681398882/Promo6_y8kkfq.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681399164/Promo3_farpky.jpg",
-      ],
+      agents: [AllenRoper],
+      photos: ["Promo6_y8kkfq", "Promo3_farpky"],
       listen: {
         amazon: "https://music.amazon.com/artists/B002XTJBY2",
         apple: "https://music.apple.com/us/artist/litz/1541184479?app=music",
@@ -109,7 +115,7 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/pricehillhustle",
         youtube: "https://www.youtube.com/@BuffaloWabs",
       },
-      media: ["pMgYLD4JesE", "5--Q3GWLdoo"],
+      videos: ["pMgYLD4JesE", "5--Q3GWLdoo"],
       listen: {
         apple:
           "https://music.apple.com/us/artist/buffalo-wabs-the-price-hill-hustle/898140828?app=music",
@@ -154,7 +160,6 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/charliebrownsuperstar/?hl=en",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B002A7KTD4",
         apple:
@@ -199,7 +204,6 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla?si=YsBfwZ_RThqEdgaLUB_PnQ",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B075GZKSBT",
         apple:
@@ -245,7 +249,6 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/search/eric%20bolander",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B01C73SH52",
         apple:
@@ -295,9 +298,9 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
       agents: [{ ...AllenRoper, type: "management" }, JordanCarriere],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681396608/photo_mar_18_2023_8_15_51_pm_1_1_twput4.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681396608/photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv.jpg",
+      photos: [
+        "photo_mar_18_2023_8_15_51_pm_1_1_twput4",
+        "photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv",
       ],
       listen: {
         spotify: "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF",
@@ -340,7 +343,6 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK?si=Pd47aO7CQe-Sjh3Tw5QOYA",
       },
       agents: [JasonMiles],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B07V3NSRDK",
         apple:
@@ -382,7 +384,6 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/@jeremyshortmusic",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B01BBIRYLC",
         apple:
@@ -423,7 +424,6 @@ export const data: DataConfig = {
         "Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes.",
       ],
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B01MYZPWZ8",
         apple:
@@ -469,7 +469,6 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/sneezymusic/",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B00147W2ZO",
         apple: "https://music.apple.com/us/artist/sneezy/335190308?app=music",
@@ -514,12 +513,8 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
       agents: [AllenRoper],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/info_ix1iep.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/tour_vfti1v.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/c_thumb,w_200/v1681221500/news_qeqjoq.jpg",
-        "D-An_iGtyYQ",
-      ],
+      photos: ["info_ix1iep", "tour_vfti1v", "news_qeqjoq"],
+      videos: ["D-An_iGtyYQ"],
       listen: {
         amazon: "https://music.amazon.com/artists/B00I2JTMLE/the-talismen",
         apple: "https://music.apple.com/us/artist/the-talismen/1452078912",
@@ -562,7 +557,6 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/wgmusic",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B003FEQBIS",
         apple:
@@ -622,7 +616,6 @@ export const data: DataConfig = {
           "https://www.youtube.com/channel/UCdiJL1kaXYJ57NwBHftWkog/featured",
       },
       agents: [AllenRoper, JasonMiles],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B0016NER4K",
         apple:
@@ -671,7 +664,6 @@ export const data: DataConfig = {
         instagram: "http://www.instagram.com/funkyoumusic",
       },
       agents: [{ ...AllenRoper, type: "management" }, MattKolinski, EricPuente],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B0051D59ZW",
         apple: "https://music.apple.com/us/artist/funk-you/400528998?app=music",
@@ -713,7 +705,6 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B078VM2GM1",
         apple:
@@ -769,7 +760,6 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
       },
       agents: [AllenRoper],
-      media: [],
       listen: {
         amazon: "https://music.amazon.com/artists/B00PGXOXBS",
         apple:
@@ -814,10 +804,10 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
       },
       agents: [AllenRoper, JasonMiles],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686056294/Tand_Appv_LiveShot_2023_a_yoyxnk.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055657/Tand_Appv_Promo_2023_a_gwy2ar.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055658/Tand_Appv_Promo_2023_b_rey3gk.jpg",
+      photos: [
+        "Tand_Appv_LiveShot_2023_a_yoyxnk",
+        "Tand_Appv_Promo_2023_a_gwy2ar",
+        "Tand_Appv_Promo_2023_b_rey3gk",
       ],
       listen: {
         amazon: "https://music.amazon.com/artists/B001TVS5WE",
@@ -860,10 +850,8 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/thebrothersgillespie/",
       },
       agents: [MichaelKrell],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681403154/The_Brothers_Gillespie_vssnqk.jpg",
-        "Xsc2Ms3-Bhk",
-      ],
+      photos: ["The_Brothers_Gillespie_vssnqk"],
+      videos: ["Xsc2Ms3-Bhk"],
       listen: {
         amazon: "https://music.amazon.com/artists/B07GWYRMLG",
         apple:
@@ -906,15 +894,15 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/kyle.kelly.9693",
       },
       agents: [MichaelKrell],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402957/Kyle_Kelly_Tour_Pic_4_y7i8du.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402956/Kyle_Kelly_Radio_Room_zu4b6x.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402956/Kyle_Kelly_Tour_Pic_3_ddt6zc.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402955/Kyle_Kelly_Tour_Pic_2_rot4s5.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402954/KK_930_Club_dw5byx.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1681402954/Kyle_Kelly_Tour_Pic_1_zxmn4n.jpg",
-        "DjM02C9vgqM",
+      photos: [
+        "Kyle_Kelly_Tour_Pic_4_y7i8du",
+        "Kyle_Kelly_Radio_Room_zu4b6x",
+        "Kyle_Kelly_Tour_Pic_3_ddt6zc",
+        "Kyle_Kelly_Tour_Pic_2_rot4s5",
+        "KK_930_Club_dw5byx",
+        "Kyle_Kelly_Tour_Pic_1_zxmn4n",
       ],
+      videos: ["DjM02C9vgqM"],
       listen: {
         amazon: "https://music.amazon.com/artists/B07FS7RXK6",
         apple:
@@ -960,13 +948,8 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/channel/UCbuYfJJbqIbcCpC_wbQhrbw",
       },
       agents: [MichaelKrell],
-      media: [
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055124/JW_Magnolia_Motor_Lounge_2_1_kikunk.jpg",
-        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055113/century-link_1_emvltg.jpg",
-        "fne6l86pI0g",
-        "jJE9KmVVm0I",
-        "j74qB-tJfAQ",
-      ],
+      photos: ["JW_Magnolia_Motor_Lounge_2_1_kikunk", "century-link_1_emvltg"],
+      videos: ["fne6l86pI0g", "jJE9KmVVm0I", "j74qB-tJfAQ"],
       listen: {
         amazon: "https://music.amazon.com/artists/B001229VN2",
         apple:

@@ -6,7 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { TrackListingPlayer } from "./TrackListingPlayer";
 import { ListenNowButtons } from "./ListenNowButtons";
-import { ArtistMedia } from "./Media";
+import { ArtistPhotos } from "./Photos";
+import { ArtistVideos } from "./Videos";
+import { SocialButtons } from "./SocialButtons";
 
 interface Props {
   params: {
@@ -22,11 +24,11 @@ interface MetadataProps {
 const Metadata = ({ artist, className }: MetadataProps) => {
   return (
     <dl
-      className={`${className} mt-10 border-t border-gray-900/10 divide-y flex flex-col divide-gray-900/10 pt-10`}
+      className={`${className} mt-10 border-t border-gray-900/10 divide-y flex flex-col divide-gray-900/10`}
     >
       <div className="py-10">
         <dt className="text-sm font-semibold leading-6 text-gray-600 mb-3">
-          Responsible Agent{artist.agents.length > 1 ? "s" : ""}
+          Contact{artist.agents.length > 1 ? "s" : ""}:
         </dt>
         <div className="grid grid-cols-1 gap-8">
           {artist.agents.map((agent, agentIdx) => (
@@ -61,9 +63,8 @@ const Metadata = ({ artist, className }: MetadataProps) => {
           ))}
         </div>
       </div>
-      <TrackListingPlayer artist={artist} />
       <ListenNowButtons artist={artist} />
-      <ArtistMedia artist={artist} />
+      <TrackListingPlayer artist={artist} />
     </dl>
   );
 };
@@ -74,24 +75,15 @@ export default async function ArtistPage({ params }: Props) {
 
   return (
     <div className="bg-white py-20 sm:py-20">
-      <div className="max-w-6xl sm:max-w-7xl mx-auto px-6 lg:px-8 mt-4">
-        <Link
-          href="/artists"
-          className="group inline-flex space-x-3 text-sm font-medium text-gray-600 hover:text-gray-500 mb-6 sm:mb-12"
-        >
-          <ArrowLongLeftIcon
-            className="h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-400"
-            aria-hidden="true"
-          />
-          <span>Back to Roster</span>
-        </Link>
-      </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8">
+              {artist.name}
+            </h1>
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
               <Image
-                className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
+                className="absolute inset-0 h-full w-full object-cover brightness-125"
                 src={`/artists/${artist.imageUrl}`}
                 fill
                 alt=""
@@ -114,15 +106,13 @@ export default async function ArtistPage({ params }: Props) {
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-[#AF8961]">
-                Artist
-              </p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                {artist.name}
-              </h1>
               <div className="max-w-xl">
+                <SocialButtons artist={artist} />
                 {artist.bio?.map((line, i) => (
-                  <p key={i} className={clsx(i === 1 ? "mt-6" : "mt-8")}>
+                  <p
+                    key={i}
+                    className={clsx(i === 0 ? "mt-4 sm:mt-4" : "mt-8")}
+                  >
                     {line}
                   </p>
                 ))}
@@ -143,6 +133,8 @@ export default async function ArtistPage({ params }: Props) {
           </div>
           <Metadata className="block sm:hidden" artist={artist} />
         </div>
+        <ArtistPhotos artist={artist} />
+        <ArtistVideos artist={artist} />
       </div>
     </div>
   );

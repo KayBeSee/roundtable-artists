@@ -62,7 +62,7 @@ export const TrackListingPlayer = ({ artist }: Props) => {
     <div className={clsx("prose w-full py-10")}>
       <div className="flex items-end">
         <h3 className={`text-md font-semibold leading-6 text-gray-600`}>
-          Top Tracks
+          Listen
         </h3>
         <span className={`text-sm text-gray-500 ml-2`}>
           - Click tracks for preview

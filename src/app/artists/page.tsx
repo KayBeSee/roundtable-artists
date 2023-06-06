@@ -40,13 +40,9 @@ const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
 export default function Artists() {
   return (
     <main className="px-4 lg:px-24 py-32 flex flex-col from-white via-[#F3EFEB] to-white bg-gradient-to-br">
-      <h1 className="whitespace-pre-wrap text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+      <h1 className="whitespace-pre-wrap text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl text-center">
         Roster
       </h1>
-      <h2 className="whitespace-pre-wrap text-lg font-normal text-gray-600 mt-4 lg:text-xl">
-        Our complete artist roster including all of the bands we book for and
-        manage.
-      </h2>
       <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 overflow-hidden">
         {Object.keys(data.artists)
           .sort((a, b) => a.localeCompare(b))
