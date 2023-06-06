@@ -53,8 +53,8 @@ const timeline = [
 
 export default function Example() {
   return (
-    <div className="bg-white">
-      <main className="isolate">
+    <div className="bg-white flex-1 flex flex-col">
+      <main className="isolate flex-1">
         {/* Content section */}
         <div className="pt-32 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
