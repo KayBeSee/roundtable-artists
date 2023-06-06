@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const SPOTIFY_TOKEN =
-  "BQBXi50e3KDbvylfC0Tdo_cYrdKOY-M1xUko3yM0LIFLbo7EXFWI4Vr9I1hgJT2ZPZAKerAfVGLRoaqqaFFnvcaZJDkMlyQQ6UxiNeEDi0QD4MIyYMW-sEjMBlUCWoeAw_ASG52hc56W-XLFAxCsFA8mGdahoHHdAEVs2HKUEF64eOKKLB1MNSjsuCpNn2L5WSvHmqbO4Inp8n57Ambk8HCE8LLyHZ4iwnpLQgLJ0fucHbt9aWxfl43Zaa0Ne26hZ4PqZ2lxtiaJqR5UV0_As-LIdY94t10EJNb4uOIgx766EsKsb5Q8LWZ-EX--KZPkzACmdMll5_49szAPlrj2tTzlix4";
+  "BQA6trGY9aA4XZ611UYZBjg6ORJZVG0ux7cXI_FShscYIOFkdLjYYSMvVgqO4V5Jkl45Nm44v9FlTGqpYz3wCtz64DC2QVDHFcgNqjrj1GnS87Jrg5y2gLgnV7eQWgEQwnnk-r743gl1rTU4a5SnXH10LEVSSgjaZilmN70oRyFKUO0Kfyj-JDE";
 
 const main = async () => {
   const identifier = process.argv[2];

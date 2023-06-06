@@ -109,7 +109,7 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/pricehillhustle",
         youtube: "https://www.youtube.com/@BuffaloWabs",
       },
-      media: ["pMgYLD4JesE"],
+      media: ["pMgYLD4JesE", "5--Q3GWLdoo"],
       listen: {
         apple:
           "https://music.apple.com/us/artist/buffalo-wabs-the-price-hill-hustle/898140828?app=music",
@@ -330,8 +330,7 @@ export const data: DataConfig = {
       imageUrl: "jaden-decker.jpg",
       website: "https://www.jadendecker.com/",
       bio: [
-        "Jaden Decker is a country music performer from Missoula, Montana. Drawing on his family’s midwestern roots, Jaden’s music is fueled by a goal to blend country/americana with a psychedelic jam-band sound, to ultimately create his labeled genre of “Rocky Mountain Country.” The 16-year-old has played 70+ shows in 2022, embarking on two national tours already, which were both completely independently booked.",
-        "Jaden’s live performance consists of him and his acoustic guitar, accompanied by a pedalboard, which greatly adds to the jam-band sound, previously mentioned. Decker knows how to get a crowd moving, and his live set reflects that beautifully. Taking the audience on a journey, they are not only left in awe by the 16-year-old, but it feels as if there is also a connection created between Jaden and the crowd.",
+        "Jaden Decker is a 17 year old American singer/songwriter from Missoula Montana. His sound is Rocky Mountain Country; described as a mix of country, roots rock, and folk. Jaden's music draws from his family's midwest roots and the love of his home state. Jaden's songwriting is straight forward, relatable, and unapologetic. This young man's piercing voice and picking skills shine through. Jaden is an old soul that has a lot to say and people are listening.  The songs are about love, loss, trials, tribulations, family, and Montana.  Jaden picked up a guitar at the age of 6 and has not put it down. Jaden started booking his own national tour at the age of 14 and never looked back. Jaden released his first album Montana Grown to rave reviews in 2020. He also released a well received self titled ep in 2021. Jaden's much anticipated third album was recorded at the iconic Blackbird Studios in Nashville and is set to be released this summer. Jaden will also be announcing his third extensive national summer tour in support of the new album.",
       ],
       social: {
         instagram: "https://www.instagram.com/jadenwdecker",
@@ -351,24 +350,16 @@ export const data: DataConfig = {
       },
       tracks: [
         {
-          name: "Father To Son",
-          url: "https://p.scdn.co/mp3-preview/bee83a4355e1d4fc27ebec2c1fe94dc8c81e9299?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Should've, Would've, Could've",
-          url: "https://p.scdn.co/mp3-preview/6ebe8a6c047bc1841b6d297376d09c9f32ad3442?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Rocky Mountain Shine",
-          url: "https://p.scdn.co/mp3-preview/0d54f71804bb904734024ae2371f651fd541fd84?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Long Gone",
+          url: "https://p.scdn.co/mp3-preview/758d0577a7e445baf579ed656832382f41dd9244?cid=cfe923b2d660439caf2b557b21f31221",
         },
         {
           name: "Goodbye Whisper",
           url: "https://p.scdn.co/mp3-preview/e6a505f9ec5ee1a02556f49fd2fff3851fe7a363?cid=cfe923b2d660439caf2b557b21f31221",
         },
         {
-          name: "Long Gone",
-          url: "https://p.scdn.co/mp3-preview/758d0577a7e445baf579ed656832382f41dd9244?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Rocky Mountain Shine",
+          url: "https://p.scdn.co/mp3-preview/0d54f71804bb904734024ae2371f651fd541fd84?cid=cfe923b2d660439caf2b557b21f31221",
         },
       ],
     },
@@ -814,7 +805,8 @@ export const data: DataConfig = {
       imageUrl: "tand.jpg",
       website: "https://tandtheband.com/",
       bio: [
-        `Tand is a 5-piece improvisational rock band from South Florida. Known for their expressive songwriting, vast catalog of originals and covers, and high energy live performances, the band is sure to satisfy all musical tastes! In just a short 5-years of performing together, Tand has performed at national festivals such as Suwannee Hulaween, Peach Music Festival, Summer Camp Music Festival and North Beach Music Festival, and shared the stage with Pigeons Playing Ping Pong, Perpetual Groove, Spafford and more. Tand is currently touring in support of their newest EP “Puzzle Piece” released in early 2022, and plans to release their first full length album in the later part of the year. Their mission: to bring listeners on a different musical journey each show, telling a story through song weaved together by spontaneous bouts of improvisation.`,
+        `Tand is a 5-piece rock band from South Florida known for their deep catalog of originals, covers and high energy live shows. The band’s first official studio release, Puzzle Piece, was released in 2022 and will be followed by their first full length album in late 2023.`,
+        `With a relentless touring schedule and frequent performances at major music festivals including Summer Camp Music Festival, Peach Music Festival and Suwannee Hulaween, Tand has solidified their place as one of the most exciting up-and-coming m usical acts.`,
       ],
       social: {
         instagram: "http://www.instagram.com/tandtheband",
@@ -822,7 +814,11 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
       },
       agents: [AllenRoper, JasonMiles],
-      media: [],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686056294/Tand_Appv_LiveShot_2023_a_yoyxnk.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055657/Tand_Appv_Promo_2023_a_gwy2ar.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055658/Tand_Appv_Promo_2023_b_rey3gk.jpg",
+      ],
       listen: {
         amazon: "https://music.amazon.com/artists/B001TVS5WE",
         apple: "https://music.apple.com/us/artist/tand/1486254695?app=music",
@@ -928,24 +924,76 @@ export const data: DataConfig = {
       },
       tracks: [
         {
-          name: "Angst & Ivory",
-          url: "https://p.scdn.co/mp3-preview/12e607ace691deb4fa24b2d0a78819495bcb2703?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Lyin'",
+          url: "https://p.scdn.co/mp3-preview/54ae074eaee3c57dfb629d00e90e195149385692?cid=0b297fa8a249464ba34f5861d4140e58",
         },
         {
-          name: "October Greene",
-          url: "https://p.scdn.co/mp3-preview/b60ab56a8df18382a9156ee8628ba3ca1784d315?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Dancing with a Borrowed Angel",
+          url: "https://p.scdn.co/mp3-preview/8c93984969cec027e9577140e731057931ccd9fa?cid=0b297fa8a249464ba34f5861d4140e58",
         },
         {
-          name: "Bilberry Blues",
-          url: "https://p.scdn.co/mp3-preview/f8a46d50f9571df84558bbf3b2032efff02eccf9?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Sway",
+          url: "https://p.scdn.co/mp3-preview/7e698260b81311088b4b3a046c33e4b30f1faec5?cid=0b297fa8a249464ba34f5861d4140e58",
         },
         {
-          name: "Not Another Love Song",
-          url: "https://p.scdn.co/mp3-preview/51807b5e53f3541c50d71b68a31c873306e9f836?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Lake Weekend",
+          url: "https://p.scdn.co/mp3-preview/92d38c5fb04ea7a4e250f52e33b50a06b989bc20?cid=0b297fa8a249464ba34f5861d4140e58",
         },
         {
-          name: "Headlights",
-          url: "https://p.scdn.co/mp3-preview/8c5cb29ce256bd9c07e5beb742f18cb576fc9ec6?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Traveler's Getdown (Take No.2)",
+          url: "https://p.scdn.co/mp3-preview/a59efecc8c883cb03a78255032aa98b4f77271cd?cid=0b297fa8a249464ba34f5861d4140e58",
+        },
+      ],
+    },
+    ["jimmy-wooten"]: {
+      name: "Jimmy Wooten",
+      imageUrl: "jimmy-wooten.jpeg",
+      website: "https://jimmywooten.net/",
+      bio: [
+        `Seeing Jimmy Wooten perform is an experience you’ll never forget! You’ll hear guitar solos played straight from the heart, a soulful ferocity in his voice and an energy from the stage that’s sure to move you. His sound is Americana with deep roots in the blues, country and rock/soul.`,
+        `Since 2015 Jimmy has toured internationally as the bassist for platinum selling country music legend, Neal McCoy, playing everywhere from the largest country music festivals to the Grand Ole Opry. During this time Jimmy was learning from Neal McCoy’s one of a kind entertainment style and also playing 100 or so shows a year with his band and quickly building a following and a reputation for high energy shows.`,
+        `Starting in 2021 Jimmy has stopped touring with Neal McCoy. Partnering with Tough Luck Records, Jimmy just released his first single of 2022 titled, “Lay You Down” which is available on all digital platforms. Jimmy is currently touring the US doing solo shows as well as with his band. If this is the 1st time you’ve heard of Jimmy Wooten, it won’t be the last!`,
+      ],
+      social: {
+        instagram: "https://www.instagram.com/jimmywooten",
+        facebook: "https://www.facebook.com/jimmywootenmusic/",
+        youtube: "https://www.youtube.com/channel/UCbuYfJJbqIbcCpC_wbQhrbw",
+      },
+      agents: [MichaelKrell],
+      media: [
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055124/JW_Magnolia_Motor_Lounge_2_1_kikunk.jpg",
+        "https://res.cloudinary.com/dyxybmew8/image/upload/v1686055113/century-link_1_emvltg.jpg",
+        "fne6l86pI0g",
+        "jJE9KmVVm0I",
+        "j74qB-tJfAQ",
+      ],
+      listen: {
+        amazon: "https://music.amazon.com/artists/B001229VN2",
+        apple:
+          "https://music.apple.com/us/artist/jimmy-wooten/1456126900?app=music",
+        spotify: "https://open.spotify.com/artist/0sZlzSKhjreEO385HbTo0y",
+        youtube: "https://youtube.com/channel/UC4LKu5ap_2srBzNqN6veHfg",
+      },
+      tracks: [
+        {
+          name: "Lay You Down",
+          url: "https://p.scdn.co/mp3-preview/01c0579ae607b55197be5b736c035adc3d01435e?cid=0b297fa8a249464ba34f5861d4140e58",
+        },
+        {
+          name: "Shine",
+          url: "https://p.scdn.co/mp3-preview/4d41a2d5912592e0abf583af4eed936f5abb2957?cid=0b297fa8a249464ba34f5861d4140e58",
+        },
+        {
+          name: "They're Playin' Our Song",
+          url: "https://p.scdn.co/mp3-preview/48a61c1fc62a5c66b452431b4f246ff91848c020?cid=0b297fa8a249464ba34f5861d4140e58",
+        },
+        {
+          name: "Coming Home",
+          url: "https://p.scdn.co/mp3-preview/d0cf0a2385680e3d9bc09d4db3861454e14d132b?cid=0b297fa8a249464ba34f5861d4140e58",
+        },
+        {
+          name: "Money Ain't Everything",
+          url: "https://p.scdn.co/mp3-preview/5163d4c7610aaf45d2f8d222a816d1c92e7a7d33?cid=0b297fa8a249464ba34f5861d4140e58",
         },
       ],
     },
