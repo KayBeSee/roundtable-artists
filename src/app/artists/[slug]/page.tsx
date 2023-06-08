@@ -37,7 +37,11 @@ const Metadata = ({ artist, className }: MetadataProps) => {
               href={`mailto:${agent.email}`}
               className="group mt-2 flex flex-col tracking-tight"
             >
-              {agent.type === "all" ? null : (
+              {agent.type === "all" ? (
+                <span className="capitalize text-sm text-gray-500 mb-0">
+                  Booking, Management
+                </span>
+              ) : (
                 <span className="capitalize text-sm text-gray-500 mb-0">
                   {agent.type}
                 </span>
