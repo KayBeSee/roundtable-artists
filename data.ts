@@ -109,7 +109,7 @@ export const data: DataConfig = {
         "They pull from all sorts of genres—from Lead Belly to John Prine, from Woody Guthrie to Willy Tea Taylor —to create something unique and deep-rooted. These guys lean into the rhythms of the Ohio River Valley—where they’ve walked upon—and look to the songs in the muddy water and the tradition it carries.",
         "To get “hustled” is to get the full-body musical experience—that head-boppin’, hip-swaying, soul-singing with the stranger next to you. It’s the kind of music that encapsulates you into a community of sound, one that becomes familiar once you hear it, like maybe, you’ve been listening to them forever.",
       ],
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       social: {
         instagram: "https://www.instagram.com/pricehillhustle",
         facebook: "https://www.facebook.com/pricehillhustle",
@@ -203,7 +203,7 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla?si=YsBfwZ_RThqEdgaLUB_PnQ",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B075GZKSBT",
         apple:
@@ -248,7 +248,7 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/channel/UCma5IwhQTG4Htv8V5G1YuGQ",
         spotify: "https://open.spotify.com/search/eric%20bolander",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B01C73SH52",
         apple:
@@ -297,7 +297,7 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       photos: [
         "photo_mar_18_2023_8_15_51_pm_1_1_twput4",
         "photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv",
@@ -383,7 +383,7 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/4hQzw3DwHQjVDfUtv9f9qp",
         youtube: "https://www.youtube.com/@jeremyshortmusic",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B01BBIRYLC",
         apple:
@@ -423,7 +423,7 @@ export const data: DataConfig = {
         "In 2016, Root Shock released a self-titled album, produced by Jason “Jocko” Randall at More Sound Studio, and followed that up with the “Many Paths” EP in 2018 & the Waves single in 2019. These recordings are proof of the band’s democratic songwriting process, with thoughtful lyrics from Brown and Grajko that invoke hope in dark times, warn against injustice, and imagine a future where everyone is free to be who they are. Always honest and thought provoking. The next album is currently in the works.",
         "Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes.",
       ],
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B01MYZPWZ8",
         apple:
@@ -468,7 +468,7 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/sneezymusic/",
         instagram: "https://www.instagram.com/sneezymusic/",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B00147W2ZO",
         apple: "https://music.apple.com/us/artist/sneezy/335190308?app=music",
@@ -512,7 +512,7 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       photos: ["info_ix1iep", "tour_vfti1v", "news_qeqjoq"],
       videos: ["D-An_iGtyYQ"],
       listen: {
@@ -556,7 +556,7 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/wayne_insta_graham/",
         facebook: "https://www.facebook.com/wgmusic",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B003FEQBIS",
         apple:
@@ -615,7 +615,10 @@ export const data: DataConfig = {
         youtube:
           "https://www.youtube.com/channel/UCdiJL1kaXYJ57NwBHftWkog/featured",
       },
-      agents: [AllenRoper, JasonMiles],
+      agents: [
+        { ...AllenRoper, type: "booking" },
+        { ...JasonMiles, type: "booking" },
+      ],
       listen: {
         amazon: "https://music.amazon.com/artists/B0016NER4K",
         apple:
@@ -704,7 +707,7 @@ export const data: DataConfig = {
         instagram: "https://www.instagram.com/thekindthieves",
         spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B078VM2GM1",
         apple:
@@ -759,7 +762,7 @@ export const data: DataConfig = {
         youtube: "https://www.youtube.com/channel/UCGxesneFsbDixd3gpdRvCZg",
         spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
       },
-      agents: [AllenRoper],
+      agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B00PGXOXBS",
         apple:
@@ -803,7 +806,10 @@ export const data: DataConfig = {
         facebook: "http://facebook.com/tandtheband",
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
       },
-      agents: [AllenRoper, JasonMiles],
+      agents: [
+        { ...AllenRoper, type: "booking" },
+        { ...JasonMiles, type: "booking" },
+      ],
       photos: [
         "Tand_Appv_LiveShot_2023_a_yoyxnk",
         "Tand_Appv_Promo_2023_a_gwy2ar",
