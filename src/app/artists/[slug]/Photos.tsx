@@ -40,6 +40,7 @@ export const ArtistPhotos = ({ artist }: Props) => {
           href={`https://res.cloudinary.com/dyxybmew8/image/upload/${file}.jpg`}
           download={`${file}.jpg`}
           className="flex items-center text-gray-100 group absolute"
+          target="_blank"
         >
           <ArrowDownCircleIcon className="w-4 h-4 mr-1" />
           <span className="group-hover:underline">Download</span>
