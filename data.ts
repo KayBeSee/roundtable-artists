@@ -37,7 +37,7 @@ const MichaelKrell: Contact = {
   name: "Michael Krell",
   email: "Michael@experienceRTA.com",
   type: "booking",
-  title: "Agent Assistant",
+  title: "Agent | Agent Assistant",
 };
 
 const KevinLynch: Contact = {
