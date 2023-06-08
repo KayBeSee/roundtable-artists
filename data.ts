@@ -297,7 +297,7 @@ export const data: DataConfig = {
         spotify:
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
       },
-      agents: [{ ...AllenRoper, type: "management" }, JordanCarriere],
+      agents: [AllenRoper],
       photos: [
         "photo_mar_18_2023_8_15_51_pm_1_1_twput4",
         "photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv",
