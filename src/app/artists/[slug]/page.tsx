@@ -133,8 +133,8 @@ export default async function ArtistPage({ params }: Props) {
           </div>
           <Metadata className="block sm:hidden" artist={artist} />
         </div>
-        <ArtistPhotos artist={artist} />
         <ArtistVideos artist={artist} />
+        <ArtistPhotos artist={artist} />
       </div>
     </div>
   );

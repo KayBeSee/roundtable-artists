@@ -99,7 +99,7 @@ export const ArtistPhotos = ({ artist }: Props) => {
             className="mt-4 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
           >
             {artist.photos?.map((file, i) => {
-              const imageUrl = `https://res.cloudinary.com/dyxybmew8/image/upload/w_120,h_84/${file}.jpg`;
+              const imageUrl = `https://res.cloudinary.com/dyxybmew8/image/upload/w_560/${file}.jpg`;
 
               return (
                 <li key={i} className="relative">
