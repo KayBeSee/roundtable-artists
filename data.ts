@@ -10,7 +10,7 @@ const AllenRoper: Contact = {
 
 const JasonMiles: Contact = {
   name: "Jason Miles",
-  email: "ason@experienceRTA.com",
+  email: "Jason@experienceRTA.com",
   type: "all",
   title: "Agent | Manager",
 };
