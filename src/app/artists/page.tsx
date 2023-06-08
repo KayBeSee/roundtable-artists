@@ -1,22 +1,30 @@
-import Image from "next/image";
+"use client";
 import Link from "next/link";
+import { CldImage } from "next-cloudinary";
 
 import { data } from "data";
 import { Artist } from "types";
 import clsx from "clsx";
 
 const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
-  <li className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+  <li className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 aspect-[10/6]">
     <Link
       href={`/artists/${slug}`}
       className="flex flex-col items-center justify-center h-full w-full text-lg font-semibold"
     >
       <div className="absolute inset-0 -z-10 h-full w-full">
-        <Image
-          src={`/artists/${option.imageUrl}`}
-          fill
+        <CldImage
+          src={option.imageUrl}
           alt={`${option.name} Photo`}
-          className="rounded-2xl object-cover object-top"
+          crop="thumb"
+          gravity="faces"
+          width="960"
+          height="600"
+          zoom="0.5"
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+          className="rounded-2xl object-cover object-top h-full w-full"
         />
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#745B44]/90 via-gray-900/40 group-hover:opacity-0 transition-all duration-200" />

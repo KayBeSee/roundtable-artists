@@ -1,4 +1,5 @@
 "use client";
+
 import { Fragment, useState } from "react";
 import clsx from "clsx";
 import { Dialog, Transition } from "@headlessui/react";
@@ -6,6 +7,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Artist } from "types";
 import Image from "next/image";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
+import { CldImage } from "next-cloudinary";
 
 interface Props {
   artist: Artist;
@@ -15,18 +17,11 @@ export const ArtistPhotos = ({ artist }: Props) => {
   let [isModalOpen, setIsModalOpen] = useState(false);
   let [content, setContent] = useState<JSX.Element>(<div></div>);
 
-  // if no media, remove this section
-  if (!artist.photos || artist.photos?.length === 0) {
-    return null;
-  }
-
   const clickPhoto = (file: string) => {
     setContent(
       <>
-        <Image
-          src={`https://res.cloudinary.com/dyxybmew8/image/upload/w_1280/${file}.jpg`}
-          blurDataURL={`https://res.cloudinary.com/dyxybmew8/image/upload/w_32/${file}.jpg`}
-          placeholder="blur"
+        <CldImage
+          src={file}
           alt=""
           width={1280}
           height={853}
@@ -99,9 +94,48 @@ export const ArtistPhotos = ({ artist }: Props) => {
             role="list"
             className="mt-4 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
           >
+            <li className="relative">
+              <div
+                className={clsx(
+                  "relative focus-within:ring-2 focus-within:ring-[#AF8961] focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+                  "aspect-[10/7] group block w-full overflow-hidden rounded-lg bg-gray-100"
+                )}
+              >
+                <CldImage
+                  src={artist.imageUrl}
+                  alt=""
+                  width={250}
+                  height={250}
+                  className="pointer-events-none object-cover absolute inset-0 h-full w-full brightness-125 saturate-0 group-hover:saturate-100"
+                />
+                <div className="absolute inset-0 bg-gray-100 mix-blend-multiply" />
+                <div
+                  className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                  aria-hidden="true"
+                >
+                  <div
+                    className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#D4C1AE] to-[#E2D6C8] opacity-40"
+                    style={{
+                      clipPath:
+                        "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                    }}
+                  />
+                </div>
+                <button
+                  type="button"
+                  className="absolute inset-0 focus:outline-none"
+                  onClick={() => {
+                    clickPhoto(artist.imageUrl);
+                    setIsModalOpen(true);
+                  }}
+                >
+                  <span className="sr-only">
+                    View details for {artist.imageUrl}
+                  </span>
+                </button>
+              </div>
+            </li>
             {artist.photos?.map((file, i) => {
-              const imageUrl = `https://res.cloudinary.com/dyxybmew8/image/upload/w_560/${file}.jpg`;
-
               return (
                 <li key={i} className="relative">
                   <div
@@ -110,8 +144,8 @@ export const ArtistPhotos = ({ artist }: Props) => {
                       "aspect-[10/7] group block w-full overflow-hidden rounded-lg bg-gray-100"
                     )}
                   >
-                    <Image
-                      src={imageUrl}
+                    <CldImage
+                      src={file}
                       alt=""
                       width={250}
                       height={250}
@@ -138,9 +172,7 @@ export const ArtistPhotos = ({ artist }: Props) => {
                         setIsModalOpen(true);
                       }}
                     >
-                      <span className="sr-only">
-                        View details for {imageUrl}
-                      </span>
+                      <span className="sr-only">View details for {file}</span>
                     </button>
                   </div>
                 </li>

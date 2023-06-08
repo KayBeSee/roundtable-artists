@@ -1,14 +1,15 @@
-import { ArrowLongLeftIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { data } from "data";
 import { Artist } from "types";
-import Image from "next/image";
-import Link from "next/link";
+// import { CldImage } from "next-cloudinary";
+// import Image from "next/image";
+
 import { TrackListingPlayer } from "./TrackListingPlayer";
 import { ListenNowButtons } from "./ListenNowButtons";
 import { ArtistPhotos } from "./Photos";
 import { ArtistVideos } from "./Videos";
 import { SocialButtons } from "./SocialButtons";
+import { MainImage } from "./MainImage";
 
 interface Props {
   params: {
@@ -86,12 +87,7 @@ export default async function ArtistPage({ params }: Props) {
               {artist.name}
             </h1>
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-              <Image
-                className="absolute inset-0 h-full w-full object-cover brightness-125"
-                src={`/artists/${artist.imageUrl}`}
-                fill
-                alt=""
-              />
+              <MainImage artist={artist} />
               <div className="absolute inset-0 bg-gray-100 mix-blend-multiply" />
               <div
                 className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"

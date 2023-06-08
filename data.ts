@@ -58,7 +58,7 @@ export const data: DataConfig = {
   artists: {
     litz: {
       name: "LITZ",
-      imageUrl: "litz.jpg",
+      imageUrl: "Promo5_2_is5yjo",
       website: "http://www.litzmusic.com/",
       bio: [
         "Maryland based LITZ provides you with a healthy dose of rock and funk with an electronic twist. Their original catalog of music spans nearly a decade and features imaginative lyrics, dancing rhythms, slapping bass, sensational horns and guitar prowess.",
@@ -103,7 +103,7 @@ export const data: DataConfig = {
     },
     ["buffalo-wabs-the-price-hill-hustle"]: {
       name: "Buffalo Wabs & The Price Hill Hustle",
-      imageUrl: "buffalo-wabs-the-price-hill-hustle.jpg",
+      imageUrl: "buffalo-wabs-the-price-hill-hustle_xwc1bg",
       bio: [
         "It’s hard to stay still around these boys. They’ve got that toe-tapping, knee-slapping, boot-stomping kind of sound. They get you moving and shaking. Buffalo Wabs & The Price Hill Hustle—part rowdy honkytonk, part old-time pioneers—equates to a sound that sticks with your soul and leaves you singing barefoot into the star sky.",
         "They pull from all sorts of genres—from Lead Belly to John Prine, from Woody Guthrie to Willy Tea Taylor —to create something unique and deep-rooted. These guys lean into the rhythms of the Ohio River Valley—where they’ve walked upon—and look to the songs in the muddy water and the tradition it carries.",
@@ -148,7 +148,7 @@ export const data: DataConfig = {
     },
     ["charlie-brown-superstar"]: {
       name: "Charlie Brown Superstar",
-      imageUrl: "charlie-brown-superstar.jpg",
+      imageUrl: "charlie-brown-superstar_zaksmb",
       website: "https://charliebrownsuperstar.com/",
       bio: [
         "Charlie Brown Superstar (Brett Fuller) is a DJ, producer, remixer, and artist from Huntington, WV. A veteran of the West Virginia DJ scene, playing at such clubs as Gumby’s, Gyrationz, and the V Club since the mid 90s, Fuller is known for playing a wide range of music with a focus on Nu Disco and house, and is also known in the Nu Disco/Disco Edit scene as a producer.",
@@ -192,7 +192,7 @@ export const data: DataConfig = {
     },
     ["darrin-hacquard"]: {
       name: "Darrin Hacquard",
-      imageUrl: "darrin-hacquard.jpg",
+      imageUrl: "darrin-hacquard_uxvwxt",
       website: " https://darrinhacquard.com",
       bio: [
         "Darrin Hacquard writes songs that connect. He’s funny, tortured, melancholy, and joyous. Sometimes he’s all of these at once. It’s an uncanny gift for empathy. He can see characters for not just what they are, but what they hope to be. His sonic landscapes are as diverse as the lyrical subjects that populate his songs. From Old Time, to Psyche-Rock, to Country, to Spaghetti Western, Darrin builds stories in a way that only he can, and tells them with unflinching vision and kindness.",
@@ -236,7 +236,7 @@ export const data: DataConfig = {
     },
     ["eric-bolander"]: {
       name: "Eric Bolander",
-      imageUrl: "eric-bolander.jpg",
+      imageUrl: "eric-bolander_v8n58f",
       website: "http://www.ericbolander.com/",
       bio: [
         "Eric Bolander's flavor of Americana/folk music offers soulful vocal tone with thoughtful melodies that have staying power. Lyrically driven by life experiences, Eric's songs will give you a glimpse into his life and a realization that happiness can be perpetuated through pain.",
@@ -281,7 +281,7 @@ export const data: DataConfig = {
     },
     ["crypto-wave-radio"]: {
       name: "crypto WAVE radio",
-      imageUrl: "crypto-wave-radio.jpeg",
+      imageUrl: "photo_mar_18_2023_8_48_30_pm_1_1_oec34z",
       bio: [
         "Austin Litz was born for this. Music is in his blood, passion pumps his heart, and the future is on his mind, so he’s using what he knows to embrace the new world of crypto and NFTs. His new house/bass project, cryptoWAVEradio, is Austin’s pandemic distraction-turned-new career and second band. Since launching the cryptoWAVEradio live stream, where he explains his production techniques and discusses the blossoming NFT scene, Austin has posted over 100 NFTs for sale on the opensea.io marketplace, raised around $10K for Dance Safe through collaborations, and has started producing records for other artists, including his own and that of his original live band, LITZ.",
         "Coming from a long line of Italian music makers, Austin’s grandfather was one of the first guitar players to introduce the electric guitar to Washington, D.C.. He later went on to establish the Litz Music Center in Maryland which still sells instruments and offers lessons today, under the same family ownership. Austin grew up in the shop, messing around with any instruments he wanted and eventually landing in violin and saxophone lessons. He was inspired by the clientele, blue collar musicians supporting their modest music careers and bigger name touring rockers, alike.",
@@ -330,7 +330,7 @@ export const data: DataConfig = {
     },
     ["jaden-decker"]: {
       name: "Jaden Decker",
-      imageUrl: "jaden-decker.jpg",
+      imageUrl: "jaden-decker_kfmtzz",
       website: "https://www.jadendecker.com/",
       bio: [
         "Jaden Decker is a 17 year old American singer/songwriter from Missoula Montana. His sound is Rocky Mountain Country; described as a mix of country, roots rock, and folk. Jaden's music draws from his family's midwest roots and the love of his home state. Jaden's songwriting is straight forward, relatable, and unapologetic. This young man's piercing voice and picking skills shine through. Jaden is an old soul that has a lot to say and people are listening.  The songs are about love, loss, trials, tribulations, family, and Montana.  Jaden picked up a guitar at the age of 6 and has not put it down. Jaden started booking his own national tour at the age of 14 and never looked back. Jaden released his first album Montana Grown to rave reviews in 2020. He also released a well received self titled ep in 2021. Jaden's much anticipated third album was recorded at the iconic Blackbird Studios in Nashville and is set to be released this summer. Jaden will also be announcing his third extensive national summer tour in support of the new album.",
@@ -367,7 +367,7 @@ export const data: DataConfig = {
     },
     ["jeremy-short"]: {
       name: "Jeremy Short",
-      imageUrl: "jeremy-short.jpg",
+      imageUrl: "jeremy-short_wljy7z",
       website: "http://jeremyshortmusic.com",
       bio: [
         "With an orange mustache, golden voice and cherry red Gibson ES-335, Eastern Kentucky Space Funk artist Jeremy Short has quickly risen to the top shelf of must-hear players on the scene. ",
@@ -416,7 +416,7 @@ export const data: DataConfig = {
     },
     ["root-shock"]: {
       name: "Root Shock",
-      imageUrl: "root-shock.jpeg",
+      imageUrl: "Promo_Photo_4_rv3icg",
       bio: [
         "Conscious, soulful, even healing—that’s how many fans of Root Shock have described the band’s infectious sound and energy. They’ve developed a voice that transcends genre but can make anyone move their body and uplift their spirit.",
         "Spearheaded by the powerhouse vocals of Jessica Brown, the Root Shock sound is at once commanding and cathartic, but never at the expense of a velvety, carefully placed jazz or neo-soul lick. Phil Grajko’s smooth earthy vocals complement his guitar style inspired by Latin, prog, and psychedelic rock textures—often in tandem with mad keyboard genius Brian Lauri. Rounding out the band, bassist Elliot Jarvis and drummer Tyre Outerbridge make for a formidable rhythm section fluent in patterns ranging from reggae to funk to reggaeton and maybe even metal.",
@@ -431,6 +431,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/2D8mRcIwXqUXTdk6acguCp",
         youtube: "https://music.youtube.com/browse/UCuWRtq9lrt7ZybQ-eghi77Q",
       },
+      photos: [
+        "Promo_Photo_1_x1fjbg",
+        "Promo_Photo_2_fu64kg",
+        "Promo_Photo_3_qcy11g",
+        "Promo_Photo_5_cwt6w2",
+        "Promo_Photo_6_ik1ofr",
+      ],
+      videos: ["oeAIZKcg6d8", "i9jmDtPqKu8"],
       tracks: [
         {
           name: "Ripple",
@@ -456,7 +464,7 @@ export const data: DataConfig = {
     },
     ["sneezy"]: {
       name: "Sneezy",
-      imageUrl: "sneezy.jpg",
+      imageUrl: "sneezy_sgr1hl",
       website: "https://www.sneezyband.com/",
       bio: [
         "Best friends since 1st grade, sharing the groove one beat at a time. Sneezy brings the funk and soul from Chicago!",
@@ -499,7 +507,7 @@ export const data: DataConfig = {
     },
     ["the-talismen"]: {
       name: "The Talismen",
-      imageUrl: "the-talismen.jpg",
+      imageUrl: "the-talismen_pqbkqa",
       website: "https://www.thetalismenband.com/",
       bio: [
         "The Talismen formed in 2015 in Montgomery, Alabama. These talented musicians have been learning and growing as they entertain audiences all over the Southeast. With a combination of energy and sophistication beyond their years, The Talismen put on a show containing soulful and funk-filled originals along with some music of their favorite artists from across the jam / rock / funk spectrum.",
@@ -546,7 +554,7 @@ export const data: DataConfig = {
     },
     ["wayne-graham"]: {
       name: "Wayne Graham",
-      imageUrl: "wayne-graham.jpg",
+      imageUrl: "wayne-graham_ltrszc",
       website: "https://www.waynegraham.co/",
       bio: [
         "Wayne Graham is a four piece folk/rock band from Whitesburg, KY. In the decade since the band’s inception, they have released eight full length records that showcase their broad range of influences as well as their outside-the-box approach as songwriters, musicians, home recordists, and human beings.",
@@ -589,7 +597,7 @@ export const data: DataConfig = {
     },
     ["william-matheny"]: {
       name: "William Matheny",
-      imageUrl: "william-matheny.jpg",
+      imageUrl: "william-matheny_pjtif0",
       website: "http://williammatheny.com/",
       bio: [
         `Many artists find inspiration on the road, but few do so with the keen eye and narrative talents of William Matheny. The West Virginia-based singer-songwriter finds inspiration for his brand of Appalachian Americana at truck stops and hotel lobbies, filtering his experiences through a perspective that’s equal parts curious and compassionate. On That Grand, Old Feeling, Matheny shares that perspective across nine new tracks.`,
@@ -651,7 +659,7 @@ export const data: DataConfig = {
     },
     ["funk-you"]: {
       name: "Funk You",
-      imageUrl: "funk-you.jpeg",
+      imageUrl: "funk-you_yb8chh",
       website: "http://funkyoumusic.com/",
       bio: [
         "For over a decade, Funk You has captivated audiences with their unrivaled alchemy of modern musical sensibilities and the last fading embers of the chitlin circuit. Comprised of nine kindred spirits from Augusta, GA, - Gavin Hamilton (Lead Vocals), Evan Miller (Guitar), William Foster (Vocals, Keys), Will Clark (Vocals, Drums), Palmer Owens (Percussion), Mark ‘Earl’ Dykes (Vocals, Bass), Gnarly G (Saxophone), Josh Spilliards (Trombone, Sousaphone), and Geoff Wood (Trumpet, Guitar) - this close-knit troupe is driven by an unwavering passion for live performance and emboldened by their own exuberance - making them one of the most electrifying acts in contemporary funk.",
@@ -698,7 +706,7 @@ export const data: DataConfig = {
     },
     ["the-kind-thieves"]: {
       name: "The Kind Thieves",
-      imageUrl: "the-kind-thieves.jpg",
+      imageUrl: "the-kind-thieves_bzvdam",
       bio: [
         "Hailing from the heart of the Appalachian mountains, The Kind Thieves are a musical tour de force to be reckoned with. Showcasing 3 song writers, beautiful harmonies, intense lead work, and vicious grooves, you never know what to expect when these boys take the stage. Strap in and hold on, The Kind Thieves are coming for you.",
       ],
@@ -740,7 +748,7 @@ export const data: DataConfig = {
     },
     ["roxy-roca"]: {
       name: "ROXY ROCA",
-      imageUrl: "roxy-roca.jpg",
+      imageUrl: "roxy-roca_dn1bfw",
       website: "https://www.roxyroca.com/",
       bio: [
         `Drawing on the rich tradition of the Texas blues with a heavy dose of classic rock and dripping with attitude, ROXY ROCA is a high-octane rock band on a mission to prove rock n’ roll ain’t dead. Four core members make up the band with electrifying front man Taye Cannon on vocals, Athens, Greece’s own guitar-hero Babis ‘BB’ Tyropolous on six-string, Quinn Walls on the low end and backing vocals, and drummer Ryan Greenblatt holding it down on drums. Taking a page from the notebooks of legends like ZZ Top, Rolling Stones, Freddie King, Aerosmith, AC/DC and Led Zeppelin, ROXY ROCA sets the stage ablaze with well crafted songs and a powerhouse presence that commands an audience. The band originally formed in Austin, TX as a soul/funk outfit, but as the phoenix rises from the ashes anew and more powerful, so does ROXY ROCA emerging from the pandemic with new life and a new sound. Their upcoming album Greasy breaks new ground for the band as they made the conscious decision to ditch green eyed soul for the primal rhythms of rock n’ roll. `,
@@ -795,7 +803,7 @@ export const data: DataConfig = {
     },
     ["tand"]: {
       name: "Tand",
-      imageUrl: "tand.jpg",
+      imageUrl: "Tand_Appv_Promo_2023_a_gwy2ar",
       website: "https://tandtheband.com/",
       bio: [
         `Tand is a 5-piece rock band from South Florida known for their deep catalog of originals, covers and high energy live shows. The band’s first official studio release, Puzzle Piece, was released in 2022 and will be followed by their first full length album in late 2023.`,
@@ -846,7 +854,7 @@ export const data: DataConfig = {
     },
     ["brothers-gillespie"]: {
       name: "The Brothers Gillespie",
-      imageUrl: "brothers-gillespie.jpeg",
+      imageUrl: "brothers-gillespie_ygv2g5",
       website: "https://www.brothersgillespie.com/",
       bio: [
         `Drawing from their Southern Appalachian roots and channeling the gritty rock ‘n’ roll they were raised on, The Brothers Gillespie spin heartfelt yarns with an alternative edge”.  Blending beautiful, catchy lyricism in the vein of the Avett Brothers, with a Futurebirds approach to pure good time rock n roll, The Brothers Gillespie deliver a modern homegrown sound that could pass for your favorite vinyl record.`,
@@ -890,7 +898,7 @@ export const data: DataConfig = {
     },
     ["kyle-kelly"]: {
       name: "Kyle Kelly",
-      imageUrl: "kyle-kelly.jpeg",
+      imageUrl: "Kyle_Kelly_Promo_Pic_mn33qp",
       website: "https://kylekellyofficial.com/",
       bio: [
         `Kyle Kelly, a North Carolina native, discovered his love for music at the early age of eight. Kyle was drawn to the old classic sounds of greats such as Lynyrd Skynyrd and Waylon Jennings, which inspired him to learn guitar and drums. From classic cars to classic country music, this 26 year old country music artist is a true throwback, embracing the look and sounds of the ‘70s and ‘80s. A nostalgic feel is often reflected in Kyle’s music while still implementing his own personal touch of a modern spin.`,
@@ -941,7 +949,7 @@ export const data: DataConfig = {
     },
     ["jimmy-wooten"]: {
       name: "Jimmy Wooten",
-      imageUrl: "jimmy-wooten.jpeg",
+      imageUrl: "jimmy-wooten_vlvp2v",
       website: "https://jimmywooten.net/",
       bio: [
         `Seeing Jimmy Wooten perform is an experience you’ll never forget! You’ll hear guitar solos played straight from the heart, a soulful ferocity in his voice and an energy from the stage that’s sure to move you. His sound is Americana with deep roots in the blues, country and rock/soul.`,
