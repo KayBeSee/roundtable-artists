@@ -159,7 +159,7 @@ export const data: DataConfig = {
         facebook: "https://www.facebook.com/charliebrownsuperstar",
         instagram: "https://www.instagram.com/charliebrownsuperstar/?hl=en",
       },
-      agents: [AllenRoper],
+      agents: [{ ...JasonMiles, type: "booking" }],
       listen: {
         amazon: "https://music.amazon.com/artists/B002A7KTD4",
         apple:
