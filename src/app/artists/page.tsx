@@ -7,7 +7,7 @@ import { Artist } from "types";
 import clsx from "clsx";
 
 const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
-  <li className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 aspect-[10/6]">
+  <li className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
     <Link
       href={`/artists/${slug}`}
       className="flex flex-col items-center justify-center h-full w-full text-lg font-semibold"

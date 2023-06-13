@@ -5,7 +5,6 @@ import clsx from "clsx";
 import { Dialog, Transition } from "@headlessui/react";
 
 import { Artist } from "types";
-import Image from "next/image";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 import { CldImage } from "next-cloudinary";
 
