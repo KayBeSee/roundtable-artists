@@ -357,6 +357,7 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/5cJ2IQj7rxvFdn9DBAlXJK",
         youtube: "https://music.youtube.com/browse/UCPxa6Rte89L7_DHuX7G2VEQ",
       },
+      videos: ["Hbx2BMIIilA"],
       tracks: [
         {
           name: "Mountain Top Road",
