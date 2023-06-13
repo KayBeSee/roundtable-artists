@@ -69,9 +69,12 @@ export const data: DataConfig = {
         instagram: "http://www.instagram.com/funkyLITZmusic",
         spotify:
           "https://open.spotify.com/artist/58c8ftGgtwcSIoZcHx45pd?si=E6AiuFCsTpiMyoJ8_9F_QA&nd=1",
+        nugsnet:
+          "https://www.nugs.net/litz-concerts-live-downloads-in-mp3-flac-or-online-music-streaming",
       },
       agents: [AllenRoper],
       photos: ["Promo6_y8kkfq", "Promo3_farpky"],
+      videos: ["7GiEX-vddzY", "Rx-KoKnHVKs"],
       listen: {
         amazon: "https://music.amazon.com/artists/B002XTJBY2",
         apple: "https://music.apple.com/us/artist/litz/1541184479?app=music",
@@ -148,7 +151,7 @@ export const data: DataConfig = {
     },
     ["charlie-brown-superstar"]: {
       name: "Charlie Brown Superstar",
-      imageUrl: "charlie-brown-superstar_zaksmb",
+      imageUrl: "MAIN_hnadkq",
       website: "https://charliebrownsuperstar.com/",
       bio: [
         "Charlie Brown Superstar (Brett Fuller) is a DJ, producer, remixer, and artist from Huntington, WV. A veteran of the West Virginia DJ scene, playing at such clubs as Gumby’s, Gyrationz, and the V Club since the mid 90s, Fuller is known for playing a wide range of music with a focus on Nu Disco and house, and is also known in the Nu Disco/Disco Edit scene as a producer.",
@@ -158,15 +161,19 @@ export const data: DataConfig = {
       social: {
         facebook: "https://www.facebook.com/charliebrownsuperstar",
         instagram: "https://www.instagram.com/charliebrownsuperstar/?hl=en",
+        twitter: "https://twitter.com/chuckbsuperstar",
+        tiktok: "https://www.tiktok.com/@charliebrownsuperstar",
+        youtube: "https://www.youtube.com/channel/UCFwuuXFkC5lF7LUbBUYpbVA",
       },
       agents: [{ ...JasonMiles, type: "booking" }],
       listen: {
-        amazon: "https://music.amazon.com/artists/B002A7KTD4",
         apple:
           "https://music.apple.com/us/artist/charlie-brown-superstar/316883023?app=music",
         spotify: "https://open.spotify.com/artist/3qIsKXFoNrxUCpgmTl5hlQ",
-        youtube: "https://music.youtube.com/browse/UCvMgwa6qgYdSofC2jEIWIRw",
+        soundcloud: "https://soundcloud.com/charlie-brown-superstar",
+        mixcloud: "https://www.mixcloud.com/charliebrownsuperstar/",
       },
+      photos: ["DSCF1346_lwl7rk", "CBS_JN_LIVE_1_1_i4uk3p"],
       tracks: [
         {
           name: "Never Gonna Stop - Original Mix",
@@ -352,16 +359,8 @@ export const data: DataConfig = {
       },
       tracks: [
         {
-          name: "Long Gone",
-          url: "https://p.scdn.co/mp3-preview/758d0577a7e445baf579ed656832382f41dd9244?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Goodbye Whisper",
-          url: "https://p.scdn.co/mp3-preview/e6a505f9ec5ee1a02556f49fd2fff3851fe7a363?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Rocky Mountain Shine",
-          url: "https://p.scdn.co/mp3-preview/0d54f71804bb904734024ae2371f651fd541fd84?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Mountain Top Road",
+          url: "https://p.scdn.co/mp3-preview/8015240a124e0c0c33fd270f8103733919d3df42?cid=0b297fa8a249464ba34f5861d4140e58",
         },
       ],
     },
@@ -418,10 +417,12 @@ export const data: DataConfig = {
       name: "Root Shock",
       imageUrl: "Promo_Photo_4_rv3icg",
       bio: [
-        "Conscious, soulful, even healing—that’s how many fans of Root Shock have described the band’s infectious sound and energy. They’ve developed a voice that transcends genre but can make anyone move their body and uplift their spirit.",
-        "Spearheaded by the powerhouse vocals of Jessica Brown, the Root Shock sound is at once commanding and cathartic, but never at the expense of a velvety, carefully placed jazz or neo-soul lick. Phil Grajko’s smooth earthy vocals complement his guitar style inspired by Latin, prog, and psychedelic rock textures—often in tandem with mad keyboard genius Brian Lauri. Rounding out the band, bassist Elliot Jarvis and drummer Tyre Outerbridge make for a formidable rhythm section fluent in patterns ranging from reggae to funk to reggaeton and maybe even metal.",
-        "In 2016, Root Shock released a self-titled album, produced by Jason “Jocko” Randall at More Sound Studio, and followed that up with the “Many Paths” EP in 2018 & the Waves single in 2019. These recordings are proof of the band’s democratic songwriting process, with thoughtful lyrics from Brown and Grajko that invoke hope in dark times, warn against injustice, and imagine a future where everyone is free to be who they are. Always honest and thought provoking. The next album is currently in the works.",
-        "Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes.",
+        `Conscious, soulful, even healing— `,
+        `That’s how many fans of Root Shock have described the band’s infectious sound and energy. They’ve developed a voice that transcends genre but can make anyone move their body and uplift their spirit. `,
+        `Spearheaded by the powerhouse vocals of Jessica Brown, the Root Shock sound is both commanding and cathartic, but never at the expense of a velvety, carefully placed jazz or neo-soul lick. Phil Grajko’s smooth vocals complement his guitar style inspired by Latin, prog, and psychedelic rock textures—often in tandem with mad keyboard genius Brian Lauri. Rounding out the band, bassist Elliot Jarvis and drummer Tyre Outerbridge make for a formidable rhythm section fluent in patterns ranging from reggae to funk to rock and maybe even metal.`,
+        `In 2016, Root Shock released a self-titled album, produced by Jason “Jocko” Randall at More Sound Studio, and followed that up with the “Many Paths” EP in 2018 & the single “Waves” in 2019.  In May 2023 they released another single “Ain’t Gonna Break” recorded at keyboard player Brian’s studio The Lion’s Den.`,
+        `These recordings are proof of the band’s democratic songwriting process, with thoughtful lyrics from Brown and Grajko that invoke hope in dark times, warn against injustice, and imagine a future where everyone is free to be who they are. Always honest and thought provoking. The next album is currently in the works.`,
+        `Today, Root Shock is bringing their renowned live show to clubs, festivals, and concert halls across the Northeast and beyond, delighting audiences from all walks of life with a positive message and danceable tunes. `,
       ],
       agents: [{ ...AllenRoper, type: "booking" }],
       listen: {
@@ -438,7 +439,7 @@ export const data: DataConfig = {
         "Promo_Photo_5_cwt6w2",
         "Promo_Photo_6_ik1ofr",
       ],
-      videos: ["oeAIZKcg6d8", "i9jmDtPqKu8"],
+      videos: ["i9jmDtPqKu8", "oeAIZKcg6d8"],
       tracks: [
         {
           name: "Ripple",
@@ -618,10 +619,10 @@ export const data: DataConfig = {
       social: {
         facebook: "http://www.facebook.com/thewilliammatheny",
         instagram: "http://instagram.com/william_matheny",
-        spotify:
-          "https://open.spotify.com/artist/5ffXgMSb7TTuOLvb56MxGx?si=h-qpJkPQT8mTTUSQBIiQ7g",
         youtube:
           "https://www.youtube.com/channel/UCdiJL1kaXYJ57NwBHftWkog/featured",
+        tiktok: "https://www.tiktok.com/@william_matheny",
+        twitter: "https://twitter.com/William_Matheny",
       },
       agents: [
         { ...AllenRoper, type: "booking" },
@@ -634,6 +635,10 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/5ffXgMSb7TTuOLvb56MxGx",
         youtube: "https://music.youtube.com/browse/UCQ1TeQSjR_0Zza4XzVtLyqg",
       },
+      photos: [
+        "110522_WilliamMatheny_FILM_EmmaDelevante_-28_bgko4p",
+        "110522_WilliamMatheny_EmmaDelevante_-136_gnnr8g",
+      ],
       tracks: [
         {
           name: "Living Half to Death",
@@ -706,7 +711,7 @@ export const data: DataConfig = {
     },
     ["the-kind-thieves"]: {
       name: "The Kind Thieves",
-      imageUrl: "the-kind-thieves_bzvdam",
+      imageUrl: "1D4A3147_iywtuj",
       bio: [
         "Hailing from the heart of the Appalachian mountains, The Kind Thieves are a musical tour de force to be reckoned with. Showcasing 3 song writers, beautiful harmonies, intense lead work, and vicious grooves, you never know what to expect when these boys take the stage. Strap in and hold on, The Kind Thieves are coming for you.",
       ],
@@ -723,6 +728,13 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/0sNSNAuIGb1GdrS2Gs08HD",
         youtube: "https://music.youtube.com/browse/UClm762ZJWm1oeMOW8bP-_ug",
       },
+      photos: [
+        "1D4A3067_ne52jx",
+        "1D4A3126_nosu9a",
+        "1D4A3197_hy3aox",
+        "the-kind-thieves_bzvdam",
+      ],
+      videos: ["D7UqOVLKEsQ"],
       tracks: [
         {
           name: "Fire & Flood",
@@ -813,6 +825,7 @@ export const data: DataConfig = {
         instagram: "http://www.instagram.com/tandtheband",
         facebook: "http://facebook.com/tandtheband",
         spotify: "https://open.spotify.com/artist/6VC6mZuswk6M1p7AJKFdh6",
+        nugsnet: "https://2nu.gs/Tand",
       },
       agents: [
         { ...AllenRoper, type: "booking" },
@@ -820,9 +833,10 @@ export const data: DataConfig = {
       ],
       photos: [
         "Tand_Appv_LiveShot_2023_a_yoyxnk",
-        "Tand_Appv_Promo_2023_a_gwy2ar",
+        "Tand_FP_Rear_Photo_ZSmith_web_fuzbxu",
         "Tand_Appv_Promo_2023_b_rey3gk",
       ],
+      videos: ["nIt9yFY_F_4", "pk1bv_j81P4"],
       listen: {
         amazon: "https://music.amazon.com/artists/B001TVS5WE",
         apple: "https://music.apple.com/us/artist/tand/1486254695?app=music",
@@ -862,10 +876,11 @@ export const data: DataConfig = {
       social: {
         instagram: "https://www.instagram.com/thebrothersgillespie/",
         facebook: "https://www.facebook.com/thebrothersgillespie/",
+        youtube: "https://www.youtube.com/@thebrothersgillespie5995",
       },
       agents: [MichaelKrell],
       photos: ["The_Brothers_Gillespie_vssnqk"],
-      videos: ["Xsc2Ms3-Bhk"],
+      videos: ["Yt25c5KlCxg", "4OiuZNNviuM"],
       listen: {
         amazon: "https://music.amazon.com/artists/B07GWYRMLG",
         apple:
@@ -906,6 +921,7 @@ export const data: DataConfig = {
       social: {
         instagram: "https://www.instagram.com/kylekelly_music/",
         facebook: "https://www.facebook.com/kyle.kelly.9693",
+        youtube: "https://www.youtube.com/@kylekelly5037",
       },
       agents: [MichaelKrell],
       photos: [
@@ -916,7 +932,7 @@ export const data: DataConfig = {
         "KK_930_Club_dw5byx",
         "Kyle_Kelly_Tour_Pic_1_zxmn4n",
       ],
-      videos: ["DjM02C9vgqM"],
+      videos: ["gzEBmehs2xQ", "Eau3MdP5rTg"],
       listen: {
         amazon: "https://music.amazon.com/artists/B07FS7RXK6",
         apple:
@@ -952,18 +968,17 @@ export const data: DataConfig = {
       imageUrl: "jimmy-wooten_vlvp2v",
       website: "https://jimmywooten.net/",
       bio: [
-        `Seeing Jimmy Wooten perform is an experience you’ll never forget! You’ll hear guitar solos played straight from the heart, a soulful ferocity in his voice and an energy from the stage that’s sure to move you. His sound is Americana with deep roots in the blues, country and rock/soul.`,
-        `Since 2015 Jimmy has toured internationally as the bassist for platinum selling country music legend, Neal McCoy, playing everywhere from the largest country music festivals to the Grand Ole Opry. During this time Jimmy was learning from Neal McCoy’s one of a kind entertainment style and also playing 100 or so shows a year with his band and quickly building a following and a reputation for high energy shows.`,
-        `Starting in 2021 Jimmy has stopped touring with Neal McCoy. Partnering with Tough Luck Records, Jimmy just released his first single of 2022 titled, “Lay You Down” which is available on all digital platforms. Jimmy is currently touring the US doing solo shows as well as with his band. If this is the 1st time you’ve heard of Jimmy Wooten, it won’t be the last!`,
+        `For over 15 years Jimmy Wooten has been delivering audiences from Texas to the East Coast a high energy concert style show with soulful vocals and searing guitar solos straight from the heart.  In 2021, he left a career as a member of country music legend Neal McCoy’s touring band to continue to focus on his own music career.  Wooten captivates audiences with his honest songwriting, and ability to connect with individuals from every walk of life.`,
+        `Digging from his roots in blues, country, rock, and soul, along with his unique entertaining style, he leaves audiences with a show they will never forget.  One of his most recent singles “Lay You Down” hit two Spotify Editorial playlists growing his audience nationwide.`,
       ],
       social: {
         instagram: "https://www.instagram.com/jimmywooten",
         facebook: "https://www.facebook.com/jimmywootenmusic/",
-        youtube: "https://www.youtube.com/channel/UCbuYfJJbqIbcCpC_wbQhrbw",
+        youtube: "https://www.youtube.com/@jimmywooten4865",
       },
       agents: [MichaelKrell],
       photos: ["JW_Magnolia_Motor_Lounge_2_1_kikunk", "century-link_1_emvltg"],
-      videos: ["fne6l86pI0g", "jJE9KmVVm0I", "j74qB-tJfAQ"],
+      videos: ["ThMHZnCL5vk", "MXVJPs6DXow"],
       listen: {
         amazon: "https://music.amazon.com/artists/B001229VN2",
         apple:

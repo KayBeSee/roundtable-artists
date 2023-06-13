@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { Artist } from "types";
 
 import {
@@ -6,6 +5,8 @@ import {
   AmazonMusic,
   Spotify,
   YoutubeMusic,
+  Mixcloud,
+  Soundcloud,
 } from "@/app/components/logos";
 
 interface StreamingLogos {
@@ -17,6 +18,8 @@ const streamingProviders: StreamingLogos = {
   amazon: AmazonMusic,
   spotify: Spotify,
   youtube: YoutubeMusic,
+  soundcloud: Soundcloud,
+  mixcloud: Mixcloud,
 };
 
 interface Props {

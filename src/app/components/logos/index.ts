@@ -6,3 +6,8 @@ export * from "./Spotify";
 export * from "./SpotifyIcon";
 export * from "./YouTube";
 export * from "./YoutubeMusic";
+export * from "./NugsNet";
+export * from "./TikTok";
+export * from "./Twitter";
+export * from "./Soundcloud";
+export * from "./Mixcloud";

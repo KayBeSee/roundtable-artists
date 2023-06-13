@@ -18,6 +18,8 @@ export interface ArtistListen {
   apple?: string;
   spotify?: string;
   youtube?: string;
+  soundcloud?: string;
+  mixcloud?: string;
 }
 
 export interface Artist {
@@ -34,6 +36,9 @@ export interface Artist {
     instagram?: string;
     spotify?: string;
     youtube?: string;
+    nugsnet?: string;
+    tiktok?: string;
+    twitter?: string;
   };
   tracks: Track[];
 }

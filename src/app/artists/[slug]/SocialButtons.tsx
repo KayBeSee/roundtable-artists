@@ -5,6 +5,9 @@ import {
   Facebook,
   SpotifyIcon,
   YouTube,
+  NugsNet,
+  TikTok,
+  Twitter,
 } from "@/app/components/logos";
 
 interface SocialLogos {
@@ -16,6 +19,9 @@ const streamingProviders: SocialLogos = {
   instagram: Instagram,
   spotify: SpotifyIcon,
   youtube: YouTube,
+  nugsnet: NugsNet,
+  tiktok: TikTok,
+  twitter: Twitter,
 };
 
 interface Props {
