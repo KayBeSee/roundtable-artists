@@ -303,14 +303,22 @@ export const data: DataConfig = {
         youtube: "https://youtube.com/channel/UCzgXKoc_HqRrJ7CKiEkiYOA",
         spotify:
           "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF?si=z1vylszLTsWafACRIPv-Fg",
+        twitter: "https://twitter.com/crypto_wav",
       },
-      agents: [{ ...AllenRoper, type: "booking" }],
+      agents: [AllenRoper],
       photos: [
         "photo_mar_18_2023_8_15_51_pm_1_1_twput4",
         "photo_mar_18_2023_8_25_16_pm_1_1_rl6jzv",
+        "20230520-BertaPhoto-Domefest-GSE04735_iwiekk",
+        "20220831_-_BertacryptoWAVEradioSummit-_2070_tifnos",
       ],
+      videos: ["EFz18pNjqzI", "kZfKrAI5qW0", "TWmw9XJ44Q4"],
       listen: {
         spotify: "https://open.spotify.com/artist/3xmyYiBUah44tP2kJvPuDF",
+        amazon:
+          "https://www.amazon.com/music/player/artists/B09Z33SSC3/crypto-wave-radio",
+        apple: "https://music.apple.com/us/artist/crypto-wave-radio/1608929321",
+        youtube: "https://music.youtube.com/channel/UCvw_bT7rOZsCIL1L50dNtkQ",
       },
       tracks: [
         {
@@ -358,6 +366,12 @@ export const data: DataConfig = {
         youtube: "https://music.youtube.com/browse/UCPxa6Rte89L7_DHuX7G2VEQ",
       },
       videos: ["Hbx2BMIIilA"],
+      photos: [
+        "IMG_3941_u7li08",
+        "IMG_3942_ceb8w2",
+        "IMG_3940_gf1pbm",
+        "phonto_lsx7yr",
+      ],
       tracks: [
         {
           name: "Mountain Top Road",
@@ -791,26 +805,11 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/3m28dyU7wbL3ne8WeZqEeF",
         youtube: "https://youtube.com/channel/UCQXx4P8DlBgO8j8y6rDghWA",
       },
+      videos: ["G1cSeETxhtY"],
       tracks: [
         {
-          name: "Taurus",
-          url: "https://p.scdn.co/mp3-preview/156b2e071bedb80e2bfa0213d6b3c3830df7733b?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Mind Blown",
-          url: "https://p.scdn.co/mp3-preview/ea3a650f862bc1b6c81423da6f3926cd431dfc76?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Don't Call Me (Maybe I'll Call You)",
-          url: "https://p.scdn.co/mp3-preview/af59370b4a938d7e35743750b8f05b80687f50fc?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Try My Love",
-          url: "https://p.scdn.co/mp3-preview/2d25fd62c2835c5a7eccac8df96781aad139f821?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Cornbread",
-          url: "https://p.scdn.co/mp3-preview/b2fe492d12b82e59ae195caebc2f1cec37380a8a?cid=cfe923b2d660439caf2b557b21f31221",
+          name: "Yazoo Queen",
+          url: "https://p.scdn.co/mp3-preview/4003ea52518a22e6a95c66b50c1feaf5bdfb7479?cid=0b297fa8a249464ba34f5861d4140e58",
         },
       ],
     },
