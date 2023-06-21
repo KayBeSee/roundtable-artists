@@ -570,10 +570,10 @@ export const data: DataConfig = {
     },
     ["wayne-graham"]: {
       name: "Wayne Graham",
-      imageUrl: "wayne-graham_ltrszc",
+      imageUrl: "2023_Press_Photo-1.jpg_v9ppc8",
       website: "https://www.waynegraham.co/",
       bio: [
-        "Wayne Graham is a four piece folk/rock band from Whitesburg, KY. In the decade since the band’s inception, they have released eight full length records that showcase their broad range of influences as well as their outside-the-box approach as songwriters, musicians, home recordists, and human beings.",
+        "Wayne Graham has gained a reputation as one of the best bands shaping the New Appalachian Sound that includes acts such as Tyler Childers, John R. Miller, The Local Honeys, and others who are making music that is shaped by tradition but intentionally set on also forging a new sonic landscape. Wayne Graham has long been at the forefront of the movement. Their innovative new album, Ish, has helped to broaden their audience and firmly establish them as one of the architects of this vibrant movement in new music coming out of the hills.",
       ],
       social: {
         youtube: "https://www.youtube.com/user/waynegrahammusic",
@@ -588,14 +588,12 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/24uPvkJPfMYve7yvVliW8G",
         youtube: "https://music.youtube.com/browse/UC65uxtnzUd0pE4J-OytYJ9w",
       },
+      photos: ["wayne-graham_ltrszc", "image_6483441_1_u2jrsw"],
+      videos: ["uV24j88Gyl0", "yVusrC_b0a4", "xxaeaCxq2BM"],
       tracks: [
         {
           name: "Real Speed Limit",
           url: "https://p.scdn.co/mp3-preview/58070400c965376617a51dae208f9e6b647d524b?cid=cfe923b2d660439caf2b557b21f31221",
-        },
-        {
-          name: "Dark Kid (Ep.1)",
-          url: "https://p.scdn.co/mp3-preview/4d94164c7e3c6e9e7a0ee6b91a39cc29915fc0d8?cid=cfe923b2d660439caf2b557b21f31221",
         },
         {
           name: "How Was Your Night?",
