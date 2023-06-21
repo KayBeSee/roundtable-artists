@@ -263,6 +263,11 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/2CYVlOC4GmL0vpjXoKESpJ",
         youtube: "https://music.youtube.com/browse/UCbHG04bvlVGhe9Xk5nBgCZA",
       },
+      photos: [
+        "Photo_Mar_25_7_51_45_AM_vakcr7",
+        "Photo_Mar_25_8_40_52_AM_1_zrsu9y",
+      ],
+      videos: ["oDBD2x0bIWs", "uHRd2FEg0N4", "aDGNx6WT8io"],
       tracks: [
         {
           name: "The Wind",
