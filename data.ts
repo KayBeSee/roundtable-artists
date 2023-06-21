@@ -588,7 +588,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/24uPvkJPfMYve7yvVliW8G",
         youtube: "https://music.youtube.com/browse/UC65uxtnzUd0pE4J-OytYJ9w",
       },
-      photos: ["wayne-graham_ltrszc", "image_6483441_1_u2jrsw"],
+      photos: [
+        "wayne-graham_ltrszc",
+        "image_6483441_1_u2jrsw",
+        "EditedIMG_0407_ohvsem",
+        "EditedIMG_0611_q0zkzq",
+        "EditedIMG_0846_eosjyg",
+        "IMG_5366_qmpary",
+      ],
       videos: ["uV24j88Gyl0", "yVusrC_b0a4", "xxaeaCxq2BM"],
       tracks: [
         {
