@@ -16,11 +16,8 @@ const OptionItem = ({ option, slug }: { option: Artist; slug: string }) => (
         <CldImage
           src={option.imageUrl}
           alt={`${option.name} Photo`}
-          crop="thumb"
-          gravity="faces"
           width="960"
           height="600"
-          zoom="0.5"
           sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
