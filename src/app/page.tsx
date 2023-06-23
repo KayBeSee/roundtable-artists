@@ -11,10 +11,10 @@ const options: Option[] = [
     title: "Roster",
     href: "/artists",
   },
-  {
-    title: "About",
-    href: "/about",
-  },
+  // {
+  //   title: "About",
+  //   href: "/about",
+  // },
   {
     title: "Contact",
     href: "/contact",

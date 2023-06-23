@@ -9,7 +9,7 @@ import { data } from "data";
 
 const navigation = [
   { name: "Roster", href: "/artists" },
-  { name: "About", href: "/about" },
+  // { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
