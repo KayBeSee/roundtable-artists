@@ -105,6 +105,9 @@ export const ArtistPhotos = ({ artist }: Props) => {
                   alt=""
                   width={250}
                   height={250}
+                  crop="thumb"
+                  gravity="auto"
+                  zoom="0.1"
                   className="pointer-events-none object-cover absolute inset-0 h-full w-full brightness-125 saturate-0 group-hover:saturate-100"
                 />
                 <div className="absolute inset-0 bg-gray-100 mix-blend-multiply" />
@@ -148,6 +151,9 @@ export const ArtistPhotos = ({ artist }: Props) => {
                       alt=""
                       width={250}
                       height={250}
+                      crop="thumb"
+                      gravity="auto"
+                      zoom="0.1"
                       className="pointer-events-none object-cover absolute inset-0 h-full w-full brightness-125 saturate-0 group-hover:saturate-100"
                     />
                     <div className="absolute inset-0 bg-gray-100 mix-blend-multiply" />
