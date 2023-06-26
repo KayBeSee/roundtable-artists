@@ -61,7 +61,9 @@ export const data: DataConfig = {
       imageUrl: "Promo5_2_is5yjo",
       website: "http://www.litzmusic.com/",
       bio: [
-        "Maryland based LITZ provides you with a healthy dose of rock and funk with an electronic twist. Their original catalog of music spans nearly a decade and features imaginative lyrics, dancing rhythms, slapping bass, sensational horns and guitar prowess.",
+        "A decade ago, Four-headed funktronic giant LITZ began leading listeners on energetically-charged adventures through feeling and sound. As they sharpened their showmanship and songcraft in the Maryland jam scene, LITZ ventured forth, opening for names like Papadosio and Lotus while adding Electric Forest, Resonance, and Peach to their festival accolades. ",
+        "The foursome–Austin Litz (keyboards, saxophone, vocals), Logan Litz (bass), Dan Gallerman (guitar), and Nick Thrasher (Drums)--are constantly producing new tracks that defy categorization musically and metaphysically. Combining funky horn riffs, wah-wah keys, pounding bass, flute, and sensational guitar, they curate a sound that isn’t decisively funk, jam, go-go, or soul but irrefutably and exquisitely LITZ.",
+        "On stage, LITZ are custodians of the audience’s dreams, fears, and hopes. Their mesmerizing synergy and improvisation inspire authentic connection, reminding us that music, more than a sound, is a feeling. No two LITZ experiences are identical. As they riff and take risks, LITZ rocks their audiences’ senses and souls, pulling listeners into new realms of emotion. Ecstatic introspection, laughs with friends, and dances shared with strangers are equally part of the LITZ odyssey.",
       ],
       social: {
         youtube: "http://www.youtube.com/LITZjams",
@@ -126,6 +128,14 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/4bVIBJHmQxWrvBZOrea5p5",
         youtube: "https://music.youtube.com/browse/UC3Lgi7PqAUYm1Fs5c1_XBdw",
       },
+      photos: [
+        "Image_hipvzz",
+        "0B8A6166_Web_Landscape_jc0dav",
+        "Image_4_eggk9u",
+        "Image_3_hxlaxq",
+        "Image_2_p89fhc",
+        "Image_1_kyi2zp",
+      ],
       tracks: [
         {
           name: "Four Walls of Raiford",
@@ -174,6 +184,7 @@ export const data: DataConfig = {
         mixcloud: "https://www.mixcloud.com/charliebrownsuperstar/",
       },
       photos: ["DSCF1346_lwl7rk", "CBS_JN_LIVE_1_1_i4uk3p"],
+      videos: ["m5nXQ9ne4FQ"],
       tracks: [
         {
           name: "Never Gonna Stop - Original Mix",
@@ -490,7 +501,7 @@ export const data: DataConfig = {
     },
     ["sneezy"]: {
       name: "Sneezy",
-      imageUrl: "sneezy_sgr1hl",
+      imageUrl: "Sneezy_Press_Photo4_gfqx7n",
       website: "https://www.sneezyband.com/",
       bio: [
         "Best friends since 1st grade, sharing the groove one beat at a time. Sneezy brings the funk and soul from Chicago!",
@@ -508,6 +519,13 @@ export const data: DataConfig = {
         apple: "https://music.apple.com/us/artist/sneezy/335190308?app=music",
         spotify: "https://open.spotify.com/artist/6q8zf3mxlxOVOm1YXM5JJp",
       },
+      videos: ["omc4oFhy15A", "mR-QVVD2mBw", "5g0xFXz_I_k"],
+      photos: [
+        "Sneezy_Press_Photo3_hn8lxk",
+        "Sneezy_Press_Photo2_xlcpgi",
+        "Sneezy_Press_Photo1_1_f8hu5x",
+        "sneezy_sgr1hl",
+      ],
       tracks: [
         {
           name: "Fat Girlfriend",
@@ -665,6 +683,7 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/5ffXgMSb7TTuOLvb56MxGx",
         youtube: "https://music.youtube.com/browse/UCQ1TeQSjR_0Zza4XzVtLyqg",
       },
+      videos: ["bIqa6PM78jY", "EplkKRWUyUg", "BLSFO21-ebE", "_2rtQqljcAM"],
       photos: [
         "110522_WilliamMatheny_FILM_EmmaDelevante_-28_bgko4p",
         "110522_WilliamMatheny_EmmaDelevante_-136_gnnr8g",

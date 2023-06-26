@@ -103,6 +103,9 @@ export default async function ArtistPage({ params }: Props) {
               </div>
             </div>
             <Metadata artist={artist} className="hidden sm:block" />
+            {slug === "william-matheny" ? (
+              <ArtistVideos artist={artist} />
+            ) : null}
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
@@ -133,7 +136,7 @@ export default async function ArtistPage({ params }: Props) {
           </div>
           <Metadata className="block sm:hidden" artist={artist} />
         </div>
-        <ArtistVideos artist={artist} />
+        {slug !== "william-matheny" ? <ArtistVideos artist={artist} /> : null}
         <ArtistPhotos artist={artist} />
       </div>
     </div>
