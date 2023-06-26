@@ -199,7 +199,7 @@ export const data: DataConfig = {
     },
     ["darrin-hacquard"]: {
       name: "Darrin Hacquard",
-      imageUrl: "darrin-hacquard_uxvwxt",
+      imageUrl: "Darrin_promo_arms_up_1_qscpx4",
       website: " https://darrinhacquard.com",
       bio: [
         "Darrin Hacquard writes songs that connect. He’s funny, tortured, melancholy, and joyous. Sometimes he’s all of these at once. It’s an uncanny gift for empathy. He can see characters for not just what they are, but what they hope to be. His sonic landscapes are as diverse as the lyrical subjects that populate his songs. From Old Time, to Psyche-Rock, to Country, to Spaghetti Western, Darrin builds stories in a way that only he can, and tells them with unflinching vision and kindness.",
@@ -218,6 +218,11 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/3bYRLgDr7vnTAVtQR7UUla",
         youtube: "https://music.youtube.com/browse/UCijtSH7bvbmw14IIGDPEffA",
       },
+      photos: [
+        "darrin-hacquard_uxvwxt",
+        "Darrin_Hacquard_Promo_Picture_4_m9dma1",
+      ],
+      videos: ["RPU2osZss_Y", "oDLgDCLAWoU", "JQTwdPEwKgM"],
       tracks: [
         {
           name: "Hurricane Season",

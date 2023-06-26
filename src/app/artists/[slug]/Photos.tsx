@@ -27,7 +27,7 @@ export const ArtistPhotos = ({ artist }: Props) => {
           className={clsx(
             "group-hover:opacity-75",
             "aspect-[3/2]",
-            "pointer-events-none object-cover"
+            "pointer-events-none object-contain"
           )}
         />
         <a
@@ -77,7 +77,7 @@ export const ArtistPhotos = ({ artist }: Props) => {
             {/* Full-screen container to center the panel */}
             <div className="fixed inset-0 flex flex-col items-center justify-center p-4">
               {/* The actual dialog panel  */}
-              <Dialog.Panel className="mx-auto max-w-2xl rounded bg-white relative">
+              <Dialog.Panel className="mx-auto max-w-2xl rounded bg-black/50 relative">
                 {content}
               </Dialog.Panel>
             </div>
