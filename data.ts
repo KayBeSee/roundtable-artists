@@ -716,9 +716,10 @@ export const data: DataConfig = {
       imageUrl: "funk-you_yb8chh",
       website: "http://funkyoumusic.com/",
       bio: [
-        "For over a decade, Funk You has captivated audiences with their unrivaled alchemy of modern musical sensibilities and the last fading embers of the chitlin circuit. Comprised of nine kindred spirits from Augusta, GA, - Gavin Hamilton (Lead Vocals), Evan Miller (Guitar), William Foster (Vocals, Keys), Will Clark (Vocals, Drums), Palmer Owens (Percussion), Mark ‘Earl’ Dykes (Vocals, Bass), Gnarly G (Saxophone), Josh Spilliards (Trombone, Sousaphone), and Geoff Wood (Trumpet, Guitar) - this close-knit troupe is driven by an unwavering passion for live performance and emboldened by their own exuberance - making them one of the most electrifying acts in contemporary funk.",
-        "The octet’s journey began in 2011 with the release of Funk You, quickly followed by its companion album Funk You II (released 2012). This early material laid the groundwork for the growth of a ravenous grassroots fan base in the southern US.",
-        `In 2016, Funk You released Apparitions, a crucial milestone that launched them onto the national scene via the project's single "She's So High". The song quickly gained traction on regional radio and has since amassed over one million plays on Spotify. This was just the beginning of an incredible adventure that saw them perform at some of the nation’s biggest festivals, including Sweetwater 420 Festival, Peach Music Festival, and Summer Camp Music Festival; whilst providing direct support for renowned acts like Gov't Mule, Galactic and Pigeons Playing Ping Pong.`,
+        `For over a decade, Funk You enchanted audiences with an unmistakably intoxicating blend of modern and vintage sound. Comprised of eight kindred spirits from Georgia, - Gavin Hamilton (Lead Vocals), Evan Miller (Guitar), William Foster (Vocals, Keys), Will Clark (Vocals, Drums), Mark ‘Earl’ Dykes (Vocals, Bass), Gnarly G (Saxophone, Flute), Josh Spilliards (Trombone, Sousaphone), and Geoff Wood (Trumpet, Guitar) -  this close-knit troupe is driven by an unwavering passion for live performance and emboldened by their own exuberance - making them one of the most electrifying acts in contemporary funk.`,
+        `The octet’s journey began in 2011 with the release of Funk You, quickly followed by its companion album Funk You II (released 2012). This early material laid the groundwork for the growth of a ravenous grassroots fan base in the southern US.`,
+        `In 2016, Funk You released Apparitions, a crucial milestone that launched them onto the national scene via the project's single "She's So High". The song quickly  gained traction on regional radio and has since amassed over one million plays on Spotify.`,
+        `This was just the beginning of an incredible adventure that saw them perform at some of the nation’s biggest festivals, including Sweetwater 420 Festival, Peach Music Festival, and Summer Camp Music Festival; whilst providing direct support for renowned acts like Gov't Mule, Galactic and Pigeons Playing Ping Pong.`,
         `The band celebrated their tenth anniversary in 2021 and marked the occasion with the release of studio album Moving Forward, a seven-song tour-de-force that places their dynamic studio prowess front and center. Recorded at Atlanta's Prana Recording Studios, and mixed by Clark and Andy Headland, the project was met with thunderous applause from fans and critics alike. Described by Live for Live Music as a "funky, rockin' good time...", the band’s sonic maturation shines on each track.`,
         `As Funk You charges forward into a new era, they are grateful for all that has come before and blessed by the opportunity to continue doing what they love most: creating music that moves both body and soul.`,
       ],
@@ -735,6 +736,7 @@ export const data: DataConfig = {
         spotify: "https://open.spotify.com/artist/1ydMwlr8PsTcShNu8uqDvz",
         youtube: "https://music.youtube.com/browse/UCMqnfb0Ia8HVYhXh5Iatv-g",
       },
+      videos: ["EhqjErjiVP0", "YGuR5n9cyMk"],
       tracks: [
         {
           name: "She's so High",
