@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { data } from "data";
+import { Facebook, Instagram } from "./components/logos";
 
 const navigation = [
   { name: "Roster", href: "/artists" },
@@ -78,6 +79,24 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
+          <div className="flex space-x-4">
+            <a
+              href="https://www.instagram.com/roundtableartists/"
+              target="_blank"
+            >
+              <Facebook
+                className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/roundtableartists/"
+              target="_blank"
+            >
+              <Instagram
+                className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+              />
+            </a>
+          </div>
         </div>
       </nav>
       <Dialog
@@ -120,6 +139,24 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.instagram.com/roundtableartists/"
+                    target="_blank"
+                  >
+                    <Facebook
+                      className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/roundtableartists/"
+                    target="_blank"
+                  >
+                    <Instagram
+                      className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

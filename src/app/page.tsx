@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Facebook, Instagram } from "./components/logos";
 
 interface Option {
   title: string;
@@ -51,6 +52,25 @@ export default function Home() {
           {options.map((option) => (
             <OptionItem key={option.href} option={option} />
           ))}
+        </ul>
+      </div>
+      <div className="mt-6 md:mt-0 md:absolute md:top-4 md:right-4">
+        <ul className="flex space-x-4">
+          <li>
+            <Facebook
+              className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+            />
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/roundtableartists/"
+              target="_blank"
+            >
+              <Instagram
+                className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+              />
+            </a>
+          </li>
         </ul>
       </div>
     </main>
