@@ -81,7 +81,7 @@ export default function Header() {
           ))}
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com/roundtableartists/"
+              href="https://www.facebook.com/profile.php?id=100093469365130"
               target="_blank"
             >
               <Facebook
@@ -141,7 +141,7 @@ export default function Header() {
                 ))}
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.instagram.com/roundtableartists/"
+                    href="https://www.facebook.com/profile.php?id=100093469365130"
                     target="_blank"
                   >
                     <Facebook

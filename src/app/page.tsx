@@ -57,9 +57,14 @@ export default function Home() {
       <div className="mt-6 md:mt-0 md:absolute md:top-4 md:right-4">
         <ul className="flex space-x-4">
           <li>
-            <Facebook
-              className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
-            />
+            <a
+              href="https://www.facebook.com/profile.php?id=100093469365130"
+              target="_blank"
+            >
+              <Facebook
+                className={`fill-gray-600 hover:fill-[#AF8961] w-6 h-6 hover:scale-110 transition duration-300 cursor-pointer`}
+              />
+            </a>
           </li>
           <li>
             <a
