@@ -551,7 +551,7 @@ export const data: DataConfig = {
     },
     ["the-talismen"]: {
       name: "The Talismen",
-      imageUrl: "Image_5_zhjz5z",
+      imageUrl: "Image_6_tn739c",
       website: "https://www.thetalismenband.com/",
       bio: [
         "The Talismen formed in 2015 in Montgomery, Alabama. These talented musicians have been learning and growing as they entertain audiences all over the Southeast. With a combination of energy and sophistication beyond their years, The Talismen put on a show containing soulful and funk-filled originals along with some music of their favorite artists from across the jam / rock / funk spectrum.",
@@ -565,7 +565,7 @@ export const data: DataConfig = {
           "https://open.spotify.com/artist/0s5YcQPTVP69Fj6Zf8wRUJ?si=k30lpozMQ0iX6Lv9tG_wMg",
       },
       agents: [{ ...AllenRoper, type: "booking" }],
-      photos: ["Image_6_tn739c", "Image_7_tqfvxd"],
+      photos: ["Image_5_zhjz5z", "Image_7_tqfvxd"],
       videos: ["D-An_iGtyYQ"],
       listen: {
         amazon: "https://music.amazon.com/artists/B00I2JTMLE/the-talismen",
