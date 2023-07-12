@@ -6,6 +6,9 @@ export interface DataConfig {
     [key: string]: Artist;
   };
   style: StyleConfig;
+  analytics: {
+    googleAnalyticsCode: string;
+  };
 }
 
 export interface Track {

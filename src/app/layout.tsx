@@ -1,5 +1,6 @@
 import { data } from "data";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: data.name,
@@ -23,7 +24,28 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-screen">
       <head></head>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${config.analytics.googleAnalyticsCode}`}
+        />
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${config.analytics.googleAnalyticsCode}', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

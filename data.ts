@@ -55,6 +55,9 @@ export const data: DataConfig = {
       trackListing: "text-[#B9A48E] text-white",
     },
   },
+  analytics: {
+    googleAnalyticsCode: "G-S8Q3SX8PBY",
+  },
   artists: {
     litz: {
       name: "LITZ",
