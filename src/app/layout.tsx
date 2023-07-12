@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className="min-h-screen">
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${config.analytics.googleAnalyticsCode}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${data.analytics.googleAnalyticsCode}`}
         />
 
         <Script
@@ -38,7 +38,7 @@ export default function RootLayout({
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${config.analytics.googleAnalyticsCode}', {
+          gtag('config', '${data.analytics.googleAnalyticsCode}', {
             page_path: window.location.pathname,
           });
         `,
